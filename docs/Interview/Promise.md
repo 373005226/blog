@@ -1,0 +1,1 @@
+promise是ES6语法中的
