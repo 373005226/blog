@@ -1,5 +1,8 @@
 module.exports = {
+  theme: 'reco',
   themeConfig: {
+    modePicker: false,
+    type: 'blog',
     nav: [
       { text: '首页', link: '/' },
       {
@@ -25,8 +28,10 @@ module.exports = {
   plugins: {
     "vuepress-plugin-auto-sidebar": {
       collapsable:true,
+      sidebarDepth:2,
       titleMap: {
-        "interview": "前端基础题",
+        "interview": "前端基础面试题",
+        "JavaScript":"JavaScript基础知识",
         "article": "前端优化类",
         "tool": "常用工具栏"
     	}
