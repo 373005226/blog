@@ -2,11 +2,11 @@
 title: JS原型详解
 categories: 前端
 tags:
-    - HTML
+    - JavaScript
 ---
 
 :::tip
-本文参考于[阮一峰老师的文章](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)的心得
+本文参考于[阮一峰老师的文章1](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 和[文章2](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)的心得
 
 部分参考[此文章](https://segmentfault.com/a/1190000017254949)
 
