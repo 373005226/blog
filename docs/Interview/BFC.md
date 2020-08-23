@@ -1,5 +1,9 @@
 ---
 title: BFC、IFC、GFC、FFC分别是什么
+categories: 前端
+tags:
+    - HTML
+    - CSS
 ---
 ## BFC、IFC、GFC、FFC
 

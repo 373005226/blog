@@ -1,6 +1,9 @@
 ---
 autoGroup-1: JS基础面试题
 title: JS原型链
+categories: 前端
+tags:
+    - JavaScript
 ---
 
 ## 题目1
@@ -37,6 +40,6 @@ false
 
 ### 理由：
 
-Animal.prototype 一开始被赋值为 {  eat: function }，原型上的构造函数就丢失了
+`Animal.prototype` 一开始被赋值为 `{  eat: function }`，原型上的构造函数就丢失了
 
-dog.constructor 从 Animal 原型上查找，查找不到，只能取 Object.constructor
+`dog.constructor` 从 `Animal` 原型上查找，查找不到，只能取 `Object.constructor`
