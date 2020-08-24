@@ -1,5 +1,4 @@
 ---
-autoGroup-1: JS基础面试题
 title: JS继承
 categories: 前端
 tags:
