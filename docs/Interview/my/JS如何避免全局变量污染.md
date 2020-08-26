@@ -3,7 +3,6 @@ title: JS如何避免全局变量污染
 categories: 前端
 tags:
     - JavaScript
-
 ---
 
 ### JS如何避免全局变量污染

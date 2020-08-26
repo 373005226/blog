@@ -1,5 +1,4 @@
 ---
-autoGroup-1: 凡科
 title: JS实现数组的find方法
 categories: 前端
 tags:

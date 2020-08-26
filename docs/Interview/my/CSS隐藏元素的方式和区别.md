@@ -1,6 +1,6 @@
 ---
-autoGroup-1: 凡科
-title: CSS的3种隐藏元素的区别
+autoGroup-1: CSS面试题
+title: CSS隐藏元素的区别
 categories: 前端
 tags:
     - JavaScript

@@ -1,0 +1,31 @@
+---
+autoGroup-1: CSS面试题
+title: css绘制直角梯形
+categories: 前端
+tags:
+    - HTML
+    - CSS
+---
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            .mask {
+                height: 0;
+                width: 100px;
+                border-top: 100px solid red;
+                border-left: 37px solid transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mask"></div>
+    </body>
+</html>
+```
+
+> 详细介绍可以看https://www.cnblogs.com/hyql/p/4876933.html

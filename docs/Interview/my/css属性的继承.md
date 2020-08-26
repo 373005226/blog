@@ -1,0 +1,13 @@
+---
+autoGroup-1: CSS面试题
+title: css可以继承的属性有哪些
+categories: 前端
+tags:
+    - CSS
+---
+
+字体系列：font、font-size、font-weight
+
+文本系列：text-align、line-height、color、text-transform
+
+cursor、visibility、list-style
