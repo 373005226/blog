@@ -52,3 +52,16 @@ tags:
 
 ![](https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/16021827-808506906716ac37.jpg)
 
+但是！箭头函数是没有arguments的，但是这个要怎么做到arguments的功能呢
+
+就可以用剩余运算符
+
+```js
+let func = (...rest) => {
+  console.log(rest)
+  //[1,2,3]
+}
+
+func(1,2,3)
+```
+
