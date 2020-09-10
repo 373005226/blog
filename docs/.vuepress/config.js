@@ -40,6 +40,7 @@ module.exports = {
         "article": "前端优化类",
         "tool": "常用工具栏",
         "company":"凡科面试题",
+        "about":"关于我",
         "my": "JavaScript面试题"
     	}
     }
