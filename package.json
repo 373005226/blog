@@ -7,6 +7,12 @@
     "vuepress": "^1.5.3",
     "vuepress-plugin-auto-sidebar": "^1.5.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "vcm"
+    }
+  },
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"

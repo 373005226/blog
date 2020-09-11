@@ -4,6 +4,7 @@ title: 待办事项
 ---
 
 ## 待办查阅网站
+- [ ] 如何在vue中使用ts开发：https://juejin.im/post/6844903834356023310
 - [ ] ts重构项目：https://juejin.im/post/6869597575243284493#heading-10
 - [ ] vue+typescript使用：https://zhuanlan.zhihu.com/p/60952007
 - [ ] Vue组建协作模式：https://juejin.im/post/6844904126325882894
@@ -15,6 +16,13 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] 收藏知乎专栏：https://zhuanlan.zhihu.com/p/188394420
 - [ ] 尤大大的Vue3.0演讲：https://zhuanlan.zhihu.com/p/68099662
 - [ ] 微前端：https://segmentfault.com/blog/code_growth
+- [ ] tcp和udp的区别 https://www.cnblogs.com/williamjie/p/9390164.html
+- [ ] github中文网 https://www.githubs.cn/search
+- [ ] vue使用ts开发 https://juejin.im/post/6844903834356023310
+- [ ] 大神的博客 https://u3xyz.com/index
+- [ ] 前端笔记 https://segmentfault.com/a/1190000022014120?utm_source=sf-related
+- [ ] 笔记2:https://segmentfault.com/a/1190000017088044?utm_source=sf-related
+- [ ] 每周清单 https://segmentfault.com/a/1190000010670186?utm_source=sf-related
 
 ## 待办事项
 
@@ -24,6 +32,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] 对git提交代码进行束缚
 - [ ] 熟悉Vue的开发技巧和ES6、ES8的语法
 - [ ] 查看mustache.js文档
+- [ ] vue设置block前端模板自动生成
 - [ ] 搭建vuepress生成文章命令
 - [ ] 微前端的实现
 - [ ] next.js
@@ -38,6 +47,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 ## 待实践
 - [ ] Vue+ts重构项目
 - [ ] Vue源码解析
+- [ ] 后台如何获取前端的错误日志 windows.onerror
 
 ## 周末计划
 - [ ] 笔记本的文章
@@ -45,3 +55,9 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] Vue父组建调用子组件的方法 https://www.cnblogs.com/yuzhongyu/p/10825824.html
 - [ ] Vue组件的技巧 https://juejin.im/post/6844904196626448391#heading-1
 - [ ] Vue技巧2 https://juejin.im/post/6844904191224184840#heading-0
+- [ ] ts重构axios
+- [ ] vue进行ssr、测试有服务端和无服务端的方法
+- [ ] vue源码解析 https://juejin.im/post/6844904181443067912
+- [ ] vlit和webpack进行一次对比（前端工程化的工具的对比）
+- [ ] 创建lerna管理工具和hasky作为提交代码的规范
+- [ ] 前端监控日志系统
