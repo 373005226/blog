@@ -33,8 +33,15 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] PM2监听node
 - [ ] 查看思否、掘金、知乎的收藏文章
 - [ ] 创建领英账号
-
+- [ ] 查看yarn和npm的区别 https://juejin.im/post/6844903616109641736#heading-1
 
 ## 待实践
-Vue+ts重构项目
-Vue源码解析
+- [ ] Vue+ts重构项目
+- [ ] Vue源码解析
+
+## 周末计划
+- [ ] 笔记本的文章
+- [ ] Vue源码解析 http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao
+- [ ] Vue父组建调用子组件的方法 https://www.cnblogs.com/yuzhongyu/p/10825824.html
+- [ ] Vue组件的技巧 https://juejin.im/post/6844904196626448391#heading-1
+- [ ] Vue技巧2 https://juejin.im/post/6844904191224184840#heading-0

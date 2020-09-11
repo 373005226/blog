@@ -8,9 +8,8 @@ module.exports = {
       {
         text: '学习笔记',
         items: [
-          { text: 'HTML', link: '/accumulation/HTML/' },
-          { text: 'CSS', link: '/accumulation/CSS/' },
           { text: 'JavaScript', link: '/accumulation/JavaScript/' },
+          { text: 'Vue', link: '/accumulation/Vue/' },
           { text: 'Python', link: '/accumulation/Python/' }
         ]
       },
