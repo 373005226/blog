@@ -51,6 +51,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 
 ## 周末计划
 - [ ] 笔记本的文章
+- [ ] hasky字段和commitlink实践
 - [ ] Vue源码解析 http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao
 - [ ] Vue父组建调用子组件的方法 https://www.cnblogs.com/yuzhongyu/p/10825824.html
 - [ ] Vue组件的技巧 https://juejin.im/post/6844904196626448391#heading-1
