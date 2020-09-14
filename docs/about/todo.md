@@ -48,8 +48,6 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] Vue+ts重构项目
 - [ ] Vue源码解析
 - [ ] 后台如何获取前端的错误日志 windows.onerror
-
-## 周末计划
 - [ ] 笔记本的文章
 - [ ] hasky字段和commitlink实践
 - [ ] Vue源码解析 http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao
@@ -62,3 +60,9 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] vlit和webpack进行一次对比（前端工程化的工具的对比）
 - [ ] 创建lerna管理工具和hasky作为提交代码的规范
 - [ ] 前端监控日志系统
+- [ ] 编写vuepress自定义组件，并且编写成教程
+- [ ] UI库常用的包管理器
+- [ ] vuepress添加github的文章发布器（如果没有创建时间的话就获取到时间的最后一次修改日期）
+- [ ] vuepress折叠代码组件
+- [ ] vuepress图片放在中间，并且设置markdown说明文字
+- [ ] 网站SSR
