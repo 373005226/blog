@@ -50,13 +50,13 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] 后台如何获取前端的错误日志 windows.onerror
 - [ ] 笔记本的文章
 - [ ] hasky字段和commitlink实践
-- [ ] Vue源码解析 http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao
-- [ ] Vue父组建调用子组件的方法 https://www.cnblogs.com/yuzhongyu/p/10825824.html
-- [ ] Vue组件的技巧 https://juejin.im/post/6844904196626448391#heading-1
-- [ ] Vue技巧2 https://juejin.im/post/6844904191224184840#heading-0
+- [ ] [Vue源码解析](http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao)
+- [ ] [Vue父组建调用子组件的方法](https://www.cnblogs.com/yuzhongyu/p/10825824.html)
+- [ ] [Vue组件的技巧](https://juejin.im/post/6844904196626448391#heading-1)
+- [ ] [Vue技巧2](https://juejin.im/post/6844904191224184840#heading-0)
 - [ ] ts重构axios
 - [ ] vue进行ssr、测试有服务端和无服务端的方法
-- [ ] vue源码解析 https://juejin.im/post/6844904181443067912
+- [ ] [vue源码解析](https://juejin.im/post/6844904181443067912)
 - [ ] vlit和webpack进行一次对比（前端工程化的工具的对比）
 - [ ] 创建lerna管理工具和hasky作为提交代码的规范
 - [ ] 前端监控日志系统
@@ -66,3 +66,9 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] vuepress折叠代码组件
 - [ ] vuepress图片放在中间，并且设置markdown说明文字
 - [ ] 网站SSR
+
+## 加急
+- [ ] [vuepress自动执行脚本以及添加algolia搜索](https://segmentfault.com/a/1190000017055963)
+- [ ] [vuepress添加日历组件](https://blog.csdn.net/cungudafa/article/details/106420842)
+- [ ] [vuepress自定义主题](https://juejin.im/post/6844903842375532558#heading-54)
+- [ ] [vuepress自定义主题](https://www.jianshu.com/p/7cc7f3f7cae9)

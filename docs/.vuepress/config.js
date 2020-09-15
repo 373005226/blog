@@ -43,5 +43,10 @@ module.exports = {
         "my": "JavaScript面试题"
     	}
     }
-  }
+  },
+  algolia: {
+    apiKey: '<API_KEY>',
+    indexName: '<INDEX_NAME>'
+  },
+  lastUpdated: 'Last Updated'
 }

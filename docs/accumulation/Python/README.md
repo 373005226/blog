@@ -1,1 +1,3 @@
 Python
+
+<customer-component/>
