@@ -18,3 +18,6 @@ git add -A
 # 把修改的文件提交
 echo "执行命令：commit "
 git commit -m "$DATE  $information"
+
+# 提交代码
+git push origin master

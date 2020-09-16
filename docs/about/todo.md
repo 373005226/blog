@@ -66,6 +66,8 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] vuepress折叠代码组件
 - [ ] vuepress图片放在中间，并且设置markdown说明文字
 - [ ] 网站SSR
+- [ ] 工具 https://ohmyz.sh/和[autojump](https://www.jianshu.com/p/15f0ffaa88d71)
+
 
 ## 加急
 - [ ] [vuepress自动执行脚本以及添加algolia搜索](https://segmentfault.com/a/1190000017055963)
