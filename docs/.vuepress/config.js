@@ -24,7 +24,7 @@ module.exports = {
       { text: '优文转载', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
       { text: '关于我', link: '/about/' },
-      { text: '我的博客', link: 'https://www.ly-blog.top/' },
+      { text: '我的博客', link: 'https://luckyryan-web.github.io/' },
       { text: 'Github', link: 'https://github.com/LuckyRyan-web/' }
     ],
     sidebar: 'auto'
@@ -43,5 +43,10 @@ module.exports = {
         "my": "JavaScript面试题"
     	}
     }
-  }
+  },
+  // algolia: {
+  //   apiKey: '<API_KEY>',
+  //   indexName: '<INDEX_NAME>'
+  // },
+  // lastUpdated: 'Last Updated'
 }
