@@ -1,5 +1,5 @@
 module.exports = {
-  theme: 'reco',
+  // theme: 'reco',
   themeConfig: {
     modePicker: false,
     type: 'blog',
