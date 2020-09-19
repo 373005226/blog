@@ -67,6 +67,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] vuepress图片放在中间，并且设置markdown说明文字
 - [ ] 网站SSR
 - [ ] 工具 https://ohmyz.sh/和[autojump](https://www.jianshu.com/p/15f0ffaa88d71)
+- [ ] [elementui源码解析](https://www.jianshu.com/p/91ae0724f5f3)
 
 
 ## 加急
@@ -79,3 +80,5 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] [vuepress自动化gitlab自动化部署](https://liubz.github.io/guide/deploy.html#heroku)
 - [ ] [vuepress自动化部署](https://github.com/TencentCloudBase/cloudbase-framework?site=vuepress#%E9%A1%B9%E7%9B%AE%E7%A4%BA%E4%BE%8B)
 - [ ] [hasky和commitlink设置代码提交](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
+- [ ] [根据swagger自动生成api接口方法]()
+- [ ] [微信文档的面试题]
