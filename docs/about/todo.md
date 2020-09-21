@@ -82,3 +82,8 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] [hasky和commitlink设置代码提交](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 - [ ] [根据swagger自动生成api接口方法]()
 - [ ] [微信文档的面试题]
+- [ ] vue分开打包
+- [ ] 如何根据swagger文档自动生成API请求接口
+- [ ] vue使用jsx语法
+- [ ] [vue无痕刷新](https://segmentfault.com/a/1190000017038530)
+- [ ] vue组件通信的方式并且实践
