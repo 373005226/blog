@@ -1,5 +1,5 @@
 ---
-title: JS原型链
+title: JS原型链面试题案例
 categories: 前端
 tags:
     - JavaScript

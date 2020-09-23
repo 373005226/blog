@@ -1,5 +1,4 @@
 ---
-autoGroup-1: 待办事项
 title: 待办事项
 ---
 
@@ -87,3 +86,11 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] vue使用jsx语法
 - [ ] [vue无痕刷新](https://segmentfault.com/a/1190000017038530)
 - [ ] vue组件通信的方式并且实践
+- [ ] 使用nunjucks生成模版文件
+- [ ] [写一个自己的脚手架](https://ulivz.com/2018/03/15/how-to-write-a-cute-cli-part-1/)，[文章2](http://kmanong.top/kmn/qxw/form/article?id=6972&cate=52)
+- [ ] [vue性能优化](http://kmanong.top/kmn/qxw/form/article?id=7140&cate=52)
+- [ ] [vue主题换肤](http://kmanong.top/kmn/qxw/form/article?id=70318&cate=52)
+- [ ] [浏览器添加RSS](https://juejin.im/post/6844903760142024711)
+
+
+代码的结构规范->包管理->提交管理->nunjucks文件模板->TS自动生成命名空间和代码->根据swagger自动生成请求接口的代码->微前端架构实现->把上述的代码整合成一个脚手架->生成文档
