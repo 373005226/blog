@@ -1,6 +1,9 @@
 ---
 home: true
 heroImage: null
+subSidebar: false
+sidebar: false
+layout: SpecialLayout
 heroText: Ryan的网站
 tagline: 个人知识点系统整理
 actionText: 点击跳转个人博客 →
