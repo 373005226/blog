@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: null
-heroText: Ryan的网站
+heroText: 刘渊的网站
 tagline: 个人知识点系统整理
 actionText: 点击跳转个人博客 →
 actionLink: https://www.ly-blog.top

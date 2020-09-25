@@ -10,7 +10,7 @@ title: 待办事项
 - [ ] 飞冰文档：https://ice.work/docs/materials/about
 - [ ] lerna中文：https://juejin.im/post/6844903856153821198#heading-7
 https://juejin.im/post/6844904194999058440#heading-13
-- [ ] npm发布包：https://juejin.im/post/6844903488153993229
+- [x] npm发布包：https://juejin.im/post/6844903488153993229
 - [ ] npm转yarn：https://classic.yarnpkg.com/zh-Hans/docs/migrating-from-npm/
 - [ ] 收藏知乎专栏：https://zhuanlan.zhihu.com/p/188394420
 - [ ] 尤大大的Vue3.0演讲：https://zhuanlan.zhihu.com/p/68099662
@@ -32,7 +32,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] 熟悉Vue的开发技巧和ES6、ES8的语法
 - [ ] 查看mustache.js文档
 - [ ] vue设置block前端模板自动生成
-- [ ] 搭建vuepress生成文章命令
+- [x] 搭建vuepress生成文章命令
 - [ ] 微前端的实现
 - [ ] next.js
 - [ ] umi https://umijs.org/zh-CN/docs/load-on-demand
@@ -91,6 +91,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] [vue性能优化](http://kmanong.top/kmn/qxw/form/article?id=7140&cate=52)
 - [ ] [vue主题换肤](http://kmanong.top/kmn/qxw/form/article?id=70318&cate=52)
 - [ ] [浏览器添加RSS](https://juejin.im/post/6844903760142024711)
+- [ ] [midway](https://midwayjs.org/midway/)
 
 
 代码的结构规范->包管理->提交管理->nunjucks文件模板->TS自动生成命名空间和代码->根据swagger自动生成请求接口的代码->微前端架构实现->把上述的代码整合成一个脚手架->生成文档

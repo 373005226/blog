@@ -1,5 +1,4 @@
 ---
-autoGroup-2: 浏览器面试题
 title: 从浏览器输入URl到显示出页面的过程
 categories: 前端
 tags:

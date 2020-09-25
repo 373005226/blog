@@ -1,5 +1,4 @@
 ---
-autoGroup-1: CSS面试题
 title: css可以继承的属性有哪些
 categories: 前端
 tags:

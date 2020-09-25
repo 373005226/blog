@@ -1,5 +1,4 @@
 ---
-autoGroup-1: CSS面试题
 title: 如何去除img元素底部的空白
 categories: 前端
 tags:

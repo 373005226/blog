@@ -1,19 +1,19 @@
 module.exports = {
-  // theme: 'reco',
   themeConfig: {
-    // modePicker: false,
+    subSidebar: 'auto',
     displayAllHeaders: true, // 默认值：false
     type: 'blog',
-    // blogConfig: {
-    //   category: {
-    //     location: 2,     // 在导航栏菜单中所占的位置，默认2
-    //     text: 'Category' // 默认文案 “分类”
-    //   },
-    //   tag: {
-    //     location: 3,     // 在导航栏菜单中所占的位置，默认3
-    //     text: 'Tag'      // 默认文案 “标签”
-    //   }
-    // },
+    lang: 'zh-CN',
+    title: '刘渊的网站',
+    friendLink: [
+      {
+        title: '知音必答',
+        desc: '网上冲浪发现的一个dalao',
+        logo: "https://www.quickask.net/assets/icons/logo.png",
+        link: 'https://www.quickask.net/'
+      }
+    ],
+    authorAvatar: '/icon.png',
     nav: [
       { text: '首页', link: '/' , icon:'reco-home'},
       {
@@ -35,6 +35,11 @@ module.exports = {
       { text: '工具箱', link: '/tool/' },
       { text: '我的项目', link: '/about/' },
       { text: '标签', link: '/tag/' },
+      { text: '分类', 
+        items: [
+          { text: '前端', link: '/categories/前端/' },
+        ]
+      },
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
       { text: '我的博客', link: 'https://luckyryan-web.github.io/' },
       { text: 'Github', link: 'https://github.com/LuckyRyan-web/' }
@@ -42,9 +47,10 @@ module.exports = {
     sidebar: {
       '/accumulation/JS/':[
         { 
-          title: '前端工程化',
+          title: '前端',
           collapsable: true,
           children:[
+            '开发风格',
             'hasky',
             'yarn和npm的区别'
           ]
@@ -52,7 +58,7 @@ module.exports = {
       ],
       '/accumulation/Python/':[
         { 
-          title: 'Python基本知识',
+          title: 'Python',
           collapsable: true,
           children:[
             ''
@@ -166,25 +172,11 @@ module.exports = {
         'todo'
       ],
       '/tool/':[
-        '',
-        {
-          title:'实用网站',
-          collapsable:true,
-          children:[
-            'plugin/',
-            'plugin/test'
-          ]
-        },
-        { 
-          title:'插件',
-          collapsable:true,
-          children:[
-            'website/'
-          ]
-        }
+        'website/'
       ]
     }
-  }
+  },
+  plugins: ['@vuepress/last-updated']
   // algolia: {
   //   apiKey: '<API_KEY>',
   //   indexName: '<INDEX_NAME>'

@@ -1,7 +1,13 @@
----
-title: 前端工程化
-categories: 前端
-tags:
-    - JavaScript
----
+**输入**
 
+```
+[[toc]]
+```
+
+**输出**
+
+<!--lint disable no-shortcut-reference-link no-undefined-references-->
+
+[[toc]]
+
+<!--lint enable no-shortcut-reference-link no-undefined-references-->

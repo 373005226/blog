@@ -1,5 +1,4 @@
 ---
-autoGroup-1: CSS面试题
 title: css绘制直角梯形
 categories: 前端
 tags:

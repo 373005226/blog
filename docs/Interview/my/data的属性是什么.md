@@ -1,5 +1,4 @@
 ---
-autoGroup-2: 浏览器面试题
 title: data-属性的作用是什么？
 categories: 前端
 tags:
