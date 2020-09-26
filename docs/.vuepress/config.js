@@ -33,7 +33,7 @@ module.exports = {
       { text: '算法积累', link: '/algorithm/' },
       { text: '学习日报', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
-      { text: '我的项目', link: '/about/' },
+      { text: '关于我', link: '/about/' },
       { text: '标签', link: '/tag/' },
       { text: '分类', 
         items: [

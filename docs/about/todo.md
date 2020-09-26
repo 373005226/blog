@@ -92,6 +92,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] [vue主题换肤](http://kmanong.top/kmn/qxw/form/article?id=70318&cate=52)
 - [ ] [浏览器添加RSS](https://juejin.im/post/6844903760142024711)
 - [ ] [midway](https://midwayjs.org/midway/)
+- [ ] [git各种操作](https://blog.csdn.net/w958796636/article/details/53611133)
 
 
 代码的结构规范->包管理->提交管理->nunjucks文件模板->TS自动生成命名空间和代码->根据swagger自动生成请求接口的代码->微前端架构实现->把上述的代码整合成一个脚手架->生成文档
