@@ -48,7 +48,6 @@ https://juejin.im/post/6844904194999058440#heading-13
 - [ ] Vue源码解析
 - [ ] 后台如何获取前端的错误日志 windows.onerror
 - [ ] 笔记本的文章
-- [ ] hasky字段和commitlink实践
 - [ ] [Vue源码解析](http://www.mawen.co/question/1133?utm_campaign=PC&utm_medium=cpc&utm_source=PC&gio_link_id=GR4bqpao)
 - [ ] [Vue父组建调用子组件的方法](https://www.cnblogs.com/yuzhongyu/p/10825824.html)
 - [ ] [Vue组件的技巧](https://juejin.im/post/6844904196626448391#heading-1)
@@ -70,15 +69,7 @@ https://juejin.im/post/6844904194999058440#heading-13
 
 
 ## 加急
-- [ ] [vuepress自动执行脚本以及添加algolia搜索](https://segmentfault.com/a/1190000017055963)
 - [ ] [vuepress添加日历组件](https://blog.csdn.net/cungudafa/article/details/106420842)
-- [ ] [vuepress自定义主题](https://juejin.im/post/6844903842375532558#heading-54)
-- [ ] [vuepress自定义主题](https://www.jianshu.com/p/7cc7f3f7cae9)
-- [ ] [vuepress添加最后修改时间](https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-last-updated.html#%E4%BD%BF%E7%94%A8)
-- [ ] [vuepress自动化部署](https://vuepress.vuejs.org/zh/guide/deploy.html#%E4%BA%91%E5%BC%80%E5%8F%91-cloudbase)
-- [ ] [vuepress自动化gitlab自动化部署](https://liubz.github.io/guide/deploy.html#heroku)
-- [ ] [vuepress自动化部署](https://github.com/TencentCloudBase/cloudbase-framework?site=vuepress#%E9%A1%B9%E7%9B%AE%E7%A4%BA%E4%BE%8B)
-- [ ] [hasky和commitlink设置代码提交](https://commitlint.js.org/#/guides-local-setup?id=install-commitlint)
 - [ ] [根据swagger自动生成api接口方法]()
 - [ ] [微信文档的面试题]
 - [ ] vue分开打包

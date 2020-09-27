@@ -12,6 +12,12 @@ module.exports = {
         desc: '网上冲浪发现的一个dalao',
         logo: "https://www.quickask.net/assets/icons/logo.png",
         link: 'https://www.quickask.net/'
+      },
+      {
+        title: '前端日志',
+        desc: '有丰富的前端知识',
+        logo:'',
+        link: 'https://lmjben.github.io/blog/js-jsBridge.html#js-native'
       }
     ],
     authorAvatar: '/icon.png',
