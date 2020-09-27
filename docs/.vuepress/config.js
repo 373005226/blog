@@ -5,6 +5,7 @@ module.exports = {
     type: 'blog',
     lang: 'zh-CN',
     title: '刘渊的网站',
+    lastUpdated: '文章最后更新时间',
     friendLink: [
       {
         title: '知音必答',
@@ -17,11 +18,11 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' , icon:'reco-home'},
       {
-        text: '学习笔记',
-        items: [
-          { text: '前端', link: '/accumulation/JS/' },
-          { text: 'Python', link: '/accumulation/Python/' }
-        ]
+        text: '学习笔记',link: '/accumulation/JS/'
+        // items: [
+        //   { text: '前端', link: '/accumulation/JS/' },
+        //   { text: 'Python', link: '/accumulation/Python/' }
+        // ]
       },
       {
          text: '面试宝典',
@@ -31,7 +32,7 @@ module.exports = {
       ]
     },
       { text: '算法积累', link: '/algorithm/' },
-      { text: '学习日报', link: '/article/' },
+      { text: '文章积累', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
       { text: '关于我', link: '/about/' },
       { text: '标签', link: '/tag/' },
@@ -48,23 +49,22 @@ module.exports = {
       '/accumulation/JS/':[
         { 
           title: '前端',
-          collapsable: true,
+          collapsable: false,
           children:[
             '开发风格',
-            'hasky',
-            'yarn和npm的区别'
+            '包管理工具'
           ]
         }
       ],
-      '/accumulation/Python/':[
-        { 
-          title: 'Python',
-          collapsable: true,
-          children:[
-            ''
-          ]
-        }
-      ],
+      // '/accumulation/Python/':[
+      //   { 
+      //     title: 'Python',
+      //     collapsable: false,
+      //     children:[
+      //       ''
+      //     ]
+      //   }
+      // ],
       '/Interview/my/':[
         { 
           title:'Javascript',
@@ -74,7 +74,6 @@ module.exports = {
             '变量拼接问题',
             '变量声明顺序的问题',
             '等号的区别',
-            '盒子模型',
             '渐进增强和优雅降级',
             '去重',
             '运算表达式的问题',
@@ -131,9 +130,10 @@ module.exports = {
           collapsable: true,
           children:[
             'BFC',
-            'css绘制直角梯形',
-            'css属性的继承',
-            'css样式覆盖问题',
+            '盒子模型',
+            'CSS绘制直角梯形',
+            'CSS属性的继承',
+            'CSS样式覆盖问题',
             'CSS隐藏元素的方式和区别',
             '垂直居中问题',
             '如何解决img底下空白',
@@ -172,7 +172,7 @@ module.exports = {
         'todo'
       ],
       '/tool/':[
-        'website/'
+        ''
       ]
     }
   },

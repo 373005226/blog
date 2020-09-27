@@ -1,13 +1,9 @@
-**输入**
+## 技术文章
+文章包括以下几个方面。
 
-```
-[[toc]]
-```
+个人总结
+学习笔记
+小实战
 
-**输出**
-
-<!--lint disable no-shortcut-reference-link no-undefined-references-->
-
-[[toc]]
-
-<!--lint enable no-shortcut-reference-link no-undefined-references-->
+## 写文章的目的
+避免学了就忘，每次学习实践后都没有记载的情况，特地做一个技术积累的文章系列
