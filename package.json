@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3",
-    "vuepress-plugin-auto-sidebar": "^1.5.0"
+    "vuepress": "^1.5.3"
   },
   "scripts": {
     "dev": "vuepress dev docs",
