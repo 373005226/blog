@@ -1,23 +1,23 @@
 ---
-title: JS实现数组的find方法
+title: JS 实现数组的 find 方法
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 > 本文来源于：https://blog.csdn.net/weixin_39503495/article/details/99854484
 >
 > 本文只写心得
 
-## JS实现数组的find方法
+## JS 实现数组的 find 方法
 
-这个是我在今年遇到的面试题，先写出编程思路：先**确定**方法要**传入的参数**和**返回的值**，再通过原型定义，在Array的原型上添加自定的方法，验证是否达到预期效果。
+这个是我在今年遇到的面试题，先写出编程思路：先**确定**方法要**传入的参数**和**返回的值**，再通过原型定义，在 Array 的原型上添加自定的方法，验证是否达到预期效果。
 
-数组的find方法是什么呢
+数组的 find 方法是什么呢
 
-## 目标：
+## 目标
 
-目标：find()返回符合条件的元素，之后的值不会再执行函数。如果没有符合条件的元素则返回undefined。
+目标：find()返回符合条件的元素，之后的值不会再执行函数。如果没有符合条件的元素则返回 undefined。
 
 还有以下两个注意点：
 
@@ -26,14 +26,14 @@ tags:
 
 
 
-## 分析:
+## 分析
 
-1. 传入：参数1为条件函数、参数2（可选）为调用的数组（默认是this）。
-2. 返回： 返回满足条件的第一个元素，不满足条件则返回undefined
+1. 传入：参数 1 为条件函数、参数 2（可选）为调用的数组（默认是 this）。
+2. 返回： 返回满足条件的第一个元素，不满足条件则返回 undefined
 
 
 
-## 实现：
+## 实现
 
 ```javascript
 Array.prototype.myFind = function (condition, thisValue = this) {
@@ -56,7 +56,7 @@ Array.prototype.myFind = function (condition, thisValue = this) {
 }
 ```
 
-## 测试：
+## 测试
 
 ```JavaScript
 const myCondition = function(item, index, arr){ return item > 2}

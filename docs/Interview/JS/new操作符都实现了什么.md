@@ -1,12 +1,11 @@
 ---
-title: new操作符都实现了什么
+title: new 操作符都实现了什么
 categories: 前端
 tags:
-    - JavaScript
-
+  - JavaScript
 ---
 
-##  new操作符做了什么？
+##  new 操作符做了什么
 
 （1）创建了一个空对象
 
@@ -20,13 +19,13 @@ var obj = new object();
 obj._proto_ = fn.prototype;
 ```
 
-（3）让fn的this指向obj，并执行fn的函数体
+（3）让 fn 的 this 指向 obj，并执行 fn 的函数体
 
 ```js
 var result = fn.call(obj);
 ```
 
-（4）判断fn的返回值类型，如果是值类型，返回obj。如果是引用类型，就返回这个引用类型的对象。
+（4）判断 fn 的返回值类型，如果是值类型，返回 obj。如果是引用类型，就返回这个引用类型的对象。
 
 ```js
 if (typeof(result) == "object"){  

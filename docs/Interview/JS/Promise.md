@@ -1,8 +1,8 @@
 ---
-title: 写出promise的构造函数
+title: 写出 promise 的构造函数
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 ```javascript

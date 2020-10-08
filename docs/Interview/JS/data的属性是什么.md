@@ -2,7 +2,7 @@
 title: data-属性的作用是什么？
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 ## 解释

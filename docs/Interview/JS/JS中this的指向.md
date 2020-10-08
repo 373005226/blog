@@ -1,8 +1,8 @@
 ---
-title: JS中this的指向问题
+title: JS 中 this 的指向问题
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 ## Javascript 的 this 用法
@@ -19,7 +19,7 @@ function demo() {
 test();  // 6
 ```
 
-此时的x就是全局变量
+此时的 x 就是全局变量
 
 ### 情况二 作为对象方法的调用
 
@@ -50,7 +50,7 @@ var obj = new test();
 obj.x // 1
 ```
 
-运行结果为1。为了表明这时this不是全局对象，我们对代码做一些改变：
+运行结果为 1。为了表明这时 this 不是全局对象，我们对代码做一些改变：
 
 ```JavaScript
 var x = 2;
@@ -62,7 +62,7 @@ var obj = new test();
 x  // 2
 ```
 
-运行结果为2，表明全局变量`x`的值根本没变。
+运行结果为 2，表明全局变量`x`的值根本没变。
 
 ### 情况四 apply 调用
 

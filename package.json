@@ -1,16 +1,26 @@
 {
-  "name": "vuepress",
+  "name": "ryan-blog",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-md": "^0.2.0",
     "vuepress": "^1.5.3"
   },
   "scripts": {
+    "lint": "lint-md ./docs",
+    "lint:fix": "lint-md ./docs --fix",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "dependencies": {
+    "lint-md-cli": "^0.1.2",
     "vuepress-theme-reco": "^1.5.5"
   }
 }

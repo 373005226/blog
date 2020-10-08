@@ -1,5 +1,5 @@
 ---
-title: vue组件通信的6种方法
+title: vue 组件通信的 6 种方法
 categories: 前端
 tags:
   - JavaScript

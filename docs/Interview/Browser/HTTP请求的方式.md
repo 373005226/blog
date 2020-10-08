@@ -2,7 +2,7 @@
 title: 浏览器面试题
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 GET      /url/list           查看

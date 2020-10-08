@@ -1,11 +1,11 @@
 ---
-title: 如何防止promise的链式调用
+title: 如何防止 promise 的链式调用
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
-## 如何阻止promise的链式调用
+## 如何阻止 promise 的链式调用
 
 现在有这么一段代码
 

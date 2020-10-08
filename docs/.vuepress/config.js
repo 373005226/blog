@@ -17,7 +17,7 @@ module.exports = {
         title: '前端日志',
         desc: '有丰富的前端知识',
         logo: '',
-        link: 'https://lmjben.github.io/blog/js-jsBridge.html#js-native',
+        link: 'https://lmjben.github.io/',
       },
     ],
     authorAvatar: '/icon.png',
@@ -68,29 +68,29 @@ module.exports = {
           collapsable: true,
           children: [
             {
+              title: '基本数据类型',
+              collapsable: true,
+              children: ['JS/NaN是什么数据类型', 'JS/运算表达式的问题', 'JS/data的属性是什么']
+            },
+            {
               title: '闭包',
               collapsable: true,
-              children: ['JS/闭包'],
+              children: ['JS/闭包']
             },
             {
               title: '变量声明',
               collapsable: true,
-              children: ['JS/变量拼接问题', 'JS/变量声明顺序的问题'],
-            },
-            {
-              title: '基本数据类型',
-              collapsable: true,
-              children: ['JS/NaN是什么数据类型', 'JS/运算表达式的问题', 'JS/data的属性是什么'],
+              children: ['JS/变量拼接问题', 'JS/变量声明顺序的问题']
             },
             {
               title: '数据类型检测',
               collapsable: true,
-              children: ['JS/JS判断数据类型的方法和区别', 'JS/instanceof', 'JS/typeof的原理', 'JS/等号的区别'],
+              children: ['JS/JS判断数据类型的方法和区别', 'JS/instanceof', 'JS/typeof的原理', 'JS/等号的区别']
             },
             {
               title: '数组去重',
               collapsable: true,
-              children: ['JS/去重', 'JS/JS数组有对象的形式去重'],
+              children: ['JS/去重', 'JS/JS数组有对象的形式去重']
             },
             {
               title: 'Event Loop',
@@ -102,7 +102,7 @@ module.exports = {
                 'JS/promise解决多个异步回调问题',
                 'JS/限制promise的并发数量',
                 'JS/JS加载的方式',
-              ],
+              ]
             },
             {
               title: '原型与原型链',
@@ -114,22 +114,22 @@ module.exports = {
                 'JS/JS实例',
                 'JS/JS原型链',
                 'JS/JS原型详解',
-              ],
+              ]
             },
             {
               title: 'this',
               collapsable: true,
-              children: ['JS/JS中this的指向'],
+              children: ['JS/JS中this的指向']
             },
             {
               title: 'ES6语法',
               collapsable: true,
-              children: ['JS/ES6语法', 'JS/JS箭头函数'],
+              children: ['JS/ES6语法', 'JS/JS箭头函数']
             },
             {
               title: '面向对象',
               collapsable: true,
-              children: ['JS/new操作符都实现了什么'],
+              children: ['JS/new操作符都实现了什么']
             },
             {
               title: '手写源码系列',
@@ -139,17 +139,17 @@ module.exports = {
                 'JS/如何阻止冒泡事件和默认事件',
                 'JS/实现JS的深浅拷贝',
                 'JS/JS实现数组的find方法',
-              ],
+              ]
             },
             {
               title: 'JS存储',
               collapsable: true,
-              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式'],
+              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式']
             },
             {
               title: '其他',
               collapsable: true,
-              children: ['JS/JS如何避免全局变量污染', 'JS/Json字符串和JavaScript对象区别'],
+              children: ['JS/JS如何避免全局变量污染', 'JS/Json字符串和JavaScript对象区别']
             },
           ],
         },
@@ -172,7 +172,7 @@ module.exports = {
         {
           title: 'Vue面试题案例',
           collapsable: true,
-          children: ['Vue/vue组件通信的6种方法'],
+          children: ['Vue/vue组件通信的6种方法']
         },
         {
           title: '计算机基础知识',
@@ -183,7 +183,7 @@ module.exports = {
             'Browser/渐进增强和优雅降级',
             'Browser/get和post的区别',
             'Browser/HTTP请求的方式',
-          ],
+          ]
         },
       ],
       '/algorithm/': ['两数相加', '深度优先遍历和广度优先遍历'],

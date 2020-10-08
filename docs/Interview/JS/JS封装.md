@@ -1,8 +1,8 @@
 ---
-title: JS面向对象之封装（一）
+title: JS 面向对象之封装（一）
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 :::tip
@@ -74,7 +74,7 @@ tags:
 
 ## 构造函数模式
 
-为了解决从原型对象生成实例的问题，Javascript提供了一个构造函数（Constructor）模式。
+为了解决从原型对象生成实例的问题，Javascript 提供了一个构造函数（Constructor）模式。
 
 所谓"构造函数"，其实就是一个普通函数，但是内部使用了`this`变量。对构造函数使用`new`运算符，就能生成实例，并且`this`变量会绑定在实例对象上。
 
@@ -110,7 +110,7 @@ tags:
 　　alert(cat2.constructor === Cat); //true
 ```
 
-Javascript还提供了一个`instanceof`运算符，验证原型对象与实例对象之间的关系。
+Javascript 还提供了一个`instanceof`运算符，验证原型对象与实例对象之间的关系。
 
 ```JavaScript
 　　alert(cat1 instanceof Cat); //true
@@ -160,9 +160,9 @@ Javascript还提供了一个`instanceof`运算符，验证原型对象与实例�
 
 能不能让`type`属性和`eat()`方法在内存中只生成一次，然后所有实例都指向那个内存地址呢？回答是可以的
 
-## Prototype模式
+## Prototype 模式
 
-Javascript规定，每一个构造函数都有一个`prototype`属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。
+Javascript 规定，每一个构造函数都有一个`prototype`属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。
 
 这意味着，我们可以把那些不变的属性和方法，直接定义在`prototype`对象上。
 
@@ -198,9 +198,9 @@ Javascript规定，每一个构造函数都有一个`prototype`属性，指向�
 　　alert(cat1.eat == cat2.eat); //true
 ```
 
-## Prototype模式的验证方法
+## Prototype 模式的验证方法
 
-为了配合`prototype`属性，Javascript定义了一些辅助方法，帮助我们使用它。，
+为了配合`prototype`属性，Javascript 定义了一些辅助方法，帮助我们使用它。，
 
 ### isPrototypeOf()
 
@@ -222,7 +222,7 @@ Javascript规定，每一个构造函数都有一个`prototype`属性，指向�
 　　alert(cat1.hasOwnProperty("type")); // false
 ```
 
-### in运算符
+### in 运算符
 
 `in`运算符可以用来判断，某个实例是否含有某个属性，不管是不是本地属性。
 

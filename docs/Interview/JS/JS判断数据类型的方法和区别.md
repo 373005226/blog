@@ -1,8 +1,8 @@
 ---
-title: JS判断数据类型和方法的区别
+title: JS 判断数据类型和方法的区别
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 > 本文来源于：
@@ -13,11 +13,11 @@ tags:
 >
 > 本文只添加个人理解
 
-## JavaScript总共有7种数据类型
+## JavaScript 总共有 7 种数据类型
 
 `string、Boolean、Array、Object、Number、Null、undefined`
 
-其中Object和Array是引用类型，其余的都是基本数据类型
+其中 Object 和 Array 是引用类型，其余的都是基本数据类型
 
 
 
@@ -40,7 +40,7 @@ console.log(typeof new RegExp()) //object
 
 可以看到，`typeof`对于基本数据类型判断是没有问题的，但是遇到引用数据类型（如：Array）是不起作用的。
 
-准确的说typeof判断`‘boolean’、‘number’、’string’、‘function’`是靠谱的，但是如果是其他的数据类型就会出现不可预期的错误，比如说不能区分`object`类型的具体类型，比如 `Array` 、`Date` 以及`自定义类`，而对于`null`及数组、对象，typeof均检测出为object，不能进一步判断它们的类型。
+准确的说 typeof 判断`‘boolean’、‘number’、’string’、‘function’`是靠谱的，但是如果是其他的数据类型就会出现不可预期的错误，比如说不能区分`object`类型的具体类型，比如 `Array` 、`Date` 以及`自定义类`，而对于`null`及数组、对象，typeof 均检测出为 object，不能进一步判断它们的类型。
 
 针对`typeof`的软肋，我们有一些比较好的解决方式：
 
@@ -79,7 +79,7 @@ function isDefined(va) {
 
 ## instanceof
 
-`instanceof` 本意是用来判断 A 是否为 B 的实例对象，表达式为：`A instanceof B`，如果A是B的实例，则返回`true`,否则返回`false`。 在这里需要特别注意的是：`instanceof`检测的是原型，那它是怎么检测的呢，我们用一段伪代码来模拟其内部执行过程：
+`instanceof` 本意是用来判断 A 是否为 B 的实例对象，表达式为：`A instanceof B`，如果 A 是 B 的实例，则返回`true`,否则返回`false`。 在这里需要特别注意的是：`instanceof`检测的是原型，那它是怎么检测的呢，我们用一段伪代码来模拟其内部执行过程：
 
 ```js
         instanceof(A, B) = {
@@ -113,7 +113,7 @@ console.log(instance({},Object)); //true
 console.log(instance([],Number)); //false
 ```
 
-从上述过程可以看出，当A的`__proto__` 指向B的`prototype`时，就认为A就是B的实例对象，我们再来看几个例子
+从上述过程可以看出，当 A 的`__proto__` 指向 B 的`prototype`时，就认为 A 就是 B 的实例对象，我们再来看几个例子
 
 ```js
 console.log(bool instanceof Boolean);// false
@@ -145,15 +145,15 @@ console.log(haoxl instanceof Student);// true
 console.log(haoxl instanceof Person);// true
 ```
 
-从结果中看出`instanceof`不能区别`undefined`和`null`，而且对于基本类型如果不是用new声明的则也测试不出来，对于是使用new声明的类型，它还可以检测出多层继承关系。
+从结果中看出`instanceof`不能区别`undefined`和`null`，而且对于基本类型如果不是用 new 声明的则也测试不出来，对于是使用 new 声明的类型，它还可以检测出多层继承关系。
 
 ## constructor
 
- 当一个函数F被定义时，JS引擎会为F添加prototype原型，然后在prototype上添加一个constructor属性，并让其指向F的引用，F利用原型对象的constructor属性引用了自身，当F作为构造函数创建对象时，原型上的constructor属性被遗传到了新创建的对象上，从原型链角度讲，构造函数F就是新对象的类型。这样做的意义是，让对象诞生以后，就具有可追溯的数据类型。
+ 当一个函数 F 被定义时，JS 引擎会为 F 添加 prototype 原型，然后在 prototype 上添加一个 constructor 属性，并让其指向 F 的引用，F 利用原型对象的 constructor 属性引用了自身，当 F 作为构造函数创建对象时，原型上的 constructor 属性被遗传到了新创建的对象上，从原型链角度讲，构造函数 F 就是新对象的类型。这样做的意义是，让对象诞生以后，就具有可追溯的数据类型。
 
 ![](https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/1523596-20190128175441624-282258963.png)
 
-constructor不能判断undefined和null，并且使用它是不安全的，因为contructor的指向是可以改变的
+constructor 不能判断 undefined 和 null，并且使用它是不安全的，因为 contructor 的指向是可以改变的
 
 ## Object.prototype.toString.call
 
@@ -165,12 +165,12 @@ constructor不能判断undefined和null，并且使用它是不安全的，因�
 
 ![](https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/image-20200826192644293.png)
 
-但是对于其他的对象，那么就要使用call或者是this来改变指向
+但是对于其他的对象，那么就要使用 call 或者是 this 来改变指向
 
 ![](https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/1523596-20190128180522674-291035001.png)
 但是它不能检测非原生构造函数的构造函数名。
 
-并且jquery上的`$.type`方法也是用`Object.prototype.toString.call()`的
+并且 jquery 上的`$.type`方法也是用`Object.prototype.toString.call()`的
 
 ## 封装一个准确判断数据类型的函数
 

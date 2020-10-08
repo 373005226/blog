@@ -1,17 +1,17 @@
 ---
-title: instanceof的原理
+title: instanceof 的原理
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
-## instanceof的原理
+## instanceof 的原理
 
 ## 案例
 
-对于JavaScript判断类型的四个方法的优缺点可以看这篇[文章](http://47.94.172.185/interview/my/JS%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%B9%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB.html#typeof)
+对于 JavaScript 判断类型的四个方法的优缺点可以看这篇[文章](http://47.94.172.185/interview/my/JS%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%B9%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB.html#typeof)
 
-`typeof`判断引用类型的时候，无论是什么都会返回Object，需要知道具体是什么对象的话，就需要掌握原理，这个时候就要用到`instanceof`
+`typeof`判断引用类型的时候，无论是什么都会返回 Object，需要知道具体是什么对象的话，就需要掌握原理，这个时候就要用到`instanceof`
 
 这里看看一段代码
 
@@ -34,7 +34,7 @@ console.log(Function instanceof Object); // true
 
 
 
-## instanceof是如何工作的
+## instanceof 是如何工作的
 
 在 MDN 上是这样描述 `instanceof` 的：
 
@@ -110,7 +110,7 @@ p1 instanceof Person; // true
 
 
 
-## 如何实现一个instanceof
+## 如何实现一个 instanceof
 
 根据上面的例子，可以很容易推断出`instanceof`的实现方式
 
@@ -162,5 +162,5 @@ left = p1.__proto__ = Person.prototype
 
 **第三次赋值**
 
-`left !== null` ,此时`left === RP` ，返回true，函数执行完毕，跳出while循环
+`left !== null` ,此时`left === RP` ，返回 true，函数执行完毕，跳出 while 循环
 

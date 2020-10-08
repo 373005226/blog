@@ -1,11 +1,11 @@
 ---
-title: JS原型链面试题案例
+title: JS 原型链面试题案例
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
-## 题目1
+## 题目 1
 
 问：三个打印出来的结果分别是什么
 
@@ -28,16 +28,16 @@ tags:
     console.log(Animal.prototype.construct === Animal)
 ```
 
-### 答案：
+### 答案
 
-```
+```plain
 旺财他是白色的喜欢啃骨头
 true
 false
 false
 ```
 
-### 理由：
+### 理由
 
 `Animal.prototype` 一开始被赋值为 `{  eat: function }`，原型上的构造函数就丢失了
 

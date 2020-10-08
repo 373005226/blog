@@ -1,15 +1,15 @@
 ---
-title: JS面向对象之非构造函数的继承（三）
+title: JS 面向对象之非构造函数的继承（三）
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 :::tip
-本文参考于[阮一峰文章](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)的心得，以下的三篇文章都是对JS原型的详解
+本文参考于[阮一峰文章](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)的心得，以下的三篇文章都是对 JS 原型的详解
 :::
 
-## 一、什么是"非构造函数"的继承？
+## 一、什么是"非构造函数"的继承
 
 比如，现在有一个对象，叫做"中国人"。
 
@@ -33,7 +33,7 @@ tags:
 
 ## 二、object()方法
 
-json格式的发明人Douglas Crockford，提出了一个object()函数，可以做到这一点。
+json 格式的发明人 Douglas Crockford，提出了一个 object()函数，可以做到这一点。
 
 ```javascript
 　　function object(o) {
@@ -47,7 +47,7 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 　　}
 ```
 
-这个object()函数，其实只做一件事，就是把子对象的prototype属性，指向父对象，从而使得子对象与父对象连在一起。
+这个 object()函数，其实只做一件事，就是把子对象的 prototype 属性，指向父对象，从而使得子对象与父对象连在一起。
 
 使用的时候，第一步先在父对象的基础上，生成子对象：
 
@@ -69,7 +69,7 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 
 ## 三、浅拷贝
 
-除了使用"prototype链"以外，还有另一种思路：把父对象的属性，全部拷贝给子对象，也能实现继承。
+除了使用"prototype 链"以外，还有另一种思路：把父对象的属性，全部拷贝给子对象，也能实现继承。
 
 下面这个函数，就是在做拷贝：
 
@@ -100,25 +100,25 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 
 但是，这样的拷贝有一个问题。那就是，如果父对象的属性等于数组或另一个对象，那么实际上，子对象获得的只是一个内存地址，而不是真正拷贝，因此存在父对象被篡改的可能。
 
-请看，现在给Chinese添加一个"出生地"属性，它的值是一个数组。
+请看，现在给 Chinese 添加一个"出生地"属性，它的值是一个数组。
 
 ```javascript
 　　Chinese.birthPlaces = ['北京','上海','香港'];
 ```
 
-通过extendCopy()函数，Doctor继承了Chinese。
+通过 extendCopy()函数，Doctor 继承了 Chinese。
 
 ```javascript
 　　var Doctor = extendCopy(Chinese);
 ```
 
-然后，我们为Doctor的"出生地"添加一个城市：
+然后，我们为 Doctor 的"出生地"添加一个城市：
 
 ```javascript
 　　Doctor.birthPlaces.push('厦门');
 ```
 
-发生了什么事？Chinese的"出生地"也被改掉了！
+发生了什么事？Chinese 的"出生地"也被改掉了！
 
 ```javascript
 　　alert(Doctor.birthPlaces); //北京, 上海, 香港, 厦门
@@ -126,7 +126,7 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 　　alert(Chinese.birthPlaces); //北京, 上海, 香港, 厦门
 ```
 
-所以，extendCopy()只是拷贝基本类型的数据，我们把这种拷贝叫做"浅拷贝"。这是早期jQuery实现继承的方式。
+所以，extendCopy()只是拷贝基本类型的数据，我们把这种拷贝叫做"浅拷贝"。这是早期 jQuery 实现继承的方式。
 
 ## 四、深拷贝
 
@@ -178,4 +178,4 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 　　alert(Chinese.birthPlaces); //北京, 上海, 香港
 ```
 
-目前，jQuery库使用的就是这种继承方法。
+目前，jQuery 库使用的就是这种继承方法。

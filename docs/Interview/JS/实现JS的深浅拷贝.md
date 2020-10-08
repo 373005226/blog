@@ -1,15 +1,15 @@
 ---
-title: 如何实现JS的深拷贝与浅拷贝
+title: 如何实现 JS 的深拷贝与浅拷贝
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 ## 浅拷贝
 
 浅拷贝就是只是复制值，但是指向的内存地址还是一样的
 
-一般情况下，使用 “=” 可以实现赋值。但对于[数组](http://caibaojian.com/t/数组)、对象、函数等这些引用类型的数据，这个符号就不好使了。本文讲解利用js原生已实现的方法，我们就可以不用自己写循环实现数组的拷贝复制。
+一般情况下，使用 “=” 可以实现赋值。但对于[数组](http://caibaojian.com/t/数组)、对象、函数等这些引用类型的数据，这个符号就不好使了。本文讲解利用 js 原生已实现的方法，我们就可以不用自己写循环实现数组的拷贝复制。
 
 先举个例子：
 
@@ -48,8 +48,8 @@ let mc1 = array1.map(function(item){
     });
 ```
 
-以上几种方法都能实现数组的`浅拷贝`，即数组的每一项只能是原始类型的数据，如果数组的项包含引用类型，如数组（即js中的二维数组），对象等，以上方法复制的项只是引用。
-还有一种方法是，使用[JSON](http://caibaojian.com/t/json)进行转换，先将数组序列化为json字符串，然后再将字符串转换成json对象即可。
+以上几种方法都能实现数组的`浅拷贝`，即数组的每一项只能是原始类型的数据，如果数组的项包含引用类型，如数组（即 js 中的二维数组），对象等，以上方法复制的项只是引用。
+还有一种方法是，使用[JSON](http://caibaojian.com/t/json)进行转换，先将数组序列化为 json 字符串，然后再将字符串转换成 json 对象即可。
 
 ### 简单的引用复制
 
@@ -96,15 +96,15 @@ let mc1 = array1.map(function(item){
 
 ### 结论
 
-但是经过测试，当数组大小超过1000000时，push方式就挂了，报错：`Maximum call stack size exceeded`
+但是经过测试，当数组大小超过 1000000 时，push 方式就挂了，报错：`Maximum call stack size exceeded`
 
-webkit浏览器使用cocat().非webkit使用slice()。
+webkit 浏览器使用 cocat().非 webkit 使用 slice()。
 
 ## 深度拷贝
 
 深度拷贝就是内存地址都不一样了
 
-### JSON方法
+### JSON 方法
 
 ```js
         var arr1 = [1, 2, [3, 4], {
@@ -129,9 +129,9 @@ https://github.com/douglascrockford/JSON-js/blob/master/json2.js
 并且这种方法可以变相的实现`深拷贝`,但是这种方法也有其限制：
 
 - 首先，数组中的项如果是`undefined`，那么转换后将变为`null`
-- 如果数组的项为对象，那么对象之间不可相互引用。会造成循环引用，无法JSON序列化。
+- 如果数组的项为对象，那么对象之间不可相互引用。会造成循环引用，无法 JSON 序列化。
 
-### JSON方法的改进
+### JSON 方法的改进
 
 全部思路的代码为：
 

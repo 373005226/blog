@@ -1,5 +1,5 @@
 ---
-title: 待办事项
+  title: 待办事项
 ---
 
 ## 待办查阅网站
@@ -71,7 +71,7 @@ title: 待办事项
 ## 加急
 
 - [ ] [vuepress 添加日历组件](https://blog.csdn.net/cungudafa/article/details/106420842)
-- [ ] [根据 swagger 自动生成 api 接口方法]()
+- [ ] [根据 swagger 自动生成 api 接口方法](.)
 - [ ] [微信文档的面试题]
 - [ ] vue 分开打包
 - [ ] 如何根据 swagger 文档自动生成 API 请求接口
@@ -88,5 +88,6 @@ title: 待办事项
 - [ ] vue 的七种组件通信方式
 - [ ] 开课吧 node 开发一个脚手架
 - [ ] vue cli 的 env 环境配置
+- [ ] http 的理解
 
 代码的结构规范->包管理->提交管理->nunjucks 文件模板->TS 自动生成命名空间和代码->根据 swagger 自动生成请求接口的代码->微前端架构实现->把上述的代码整合成一个脚手架->生成文档

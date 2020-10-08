@@ -1,12 +1,12 @@
 ---
-title: JS原型详解
+title: JS 原型详解
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 :::tip
-本文参考于[阮一峰老师的文章1](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 和[文章2](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)的心得
+本文参考于[阮一峰老师的文章 1](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 和[文章 2](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)的心得
 
 部分参考[此文章](https://segmentfault.com/a/1190000017254949)
 
@@ -15,13 +15,13 @@ tags:
 
 ## 原型链设计的初衷
 
-众所周知，JavaScript是Netscape（网景）公司的Brendan Eich设计的，当时受C++和Java的影响，JavaScript也必须更新迭代。
+众所周知，JavaScript 是 Netscape（网景）公司的 Brendan Eich 设计的，当时受 C++和 Java 的影响，JavaScript 也必须更新迭代。
 
-如果真的是一种简易的脚本语言，其实不需要有"继承"机制。但是，Javascript里面都是对象，必须有一种机制，将所有对象联系起来。所以，Brendan Eich最后还是设计了"继承"。
+如果真的是一种简易的脚本语言，其实不需要有"继承"机制。但是，Javascript 里面都是对象，必须有一种机制，将所有对象联系起来。所以，Brendan Eich 最后还是设计了"继承"。
 
-但是，他不打算引入"类"（class）的概念，因为一旦有了"类"，Javascript就是一种完整的面向对象编程语言了，这好像有点太正式了，而且增加了初学者的入门难度。
+但是，他不打算引入"类"（class）的概念，因为一旦有了"类"，Javascript 就是一种完整的面向对象编程语言了，这好像有点太正式了，而且增加了初学者的入门难度。
 
-他考虑到，C++和Java语言都使用new命令，生成实例。
+他考虑到，C++和 Java 语言都使用 new 命令，生成实例。
 
 C++的写法是：
 
@@ -29,17 +29,17 @@ C++的写法是：
 ClassName *object = new ClassName(param);
 ```
 
-Java的写法是：
+Java 的写法是：
 
 ```java
 Foo foo = new Foo();
 ```
 
-因此，他就把new命令引入了Javascript，用来从原型对象生成一个实例对象。但是，Javascript没有"类"，怎么来表示原型对象呢？
+因此，他就把 new 命令引入了 Javascript，用来从原型对象生成一个实例对象。但是，Javascript 没有"类"，怎么来表示原型对象呢？
 
-这时，他想到C++和Java使用new命令时，都会调用"类"的构造函数（constructor）。他就做了一个简化的设计，在Javascript语言中，new命令后面跟的不是类，而是构造函数。
+这时，他想到 C++和 Java 使用 new 命令时，都会调用"类"的构造函数（constructor）。他就做了一个简化的设计，在 Javascript 语言中，new 命令后面跟的不是类，而是构造函数。
 
-举例来说，现在有一个叫做DOG的构造函数，表示狗对象的原型。
+举例来说，现在有一个叫做 DOG 的构造函数，表示狗对象的原型。
 
 ```javascript
 　　function DOG(name){
@@ -49,7 +49,7 @@ Foo foo = new Foo();
 　　}
 ```
 
-对这个构造函数使用new，就会生成一个狗对象的实例。
+对这个构造函数使用 new，就会生成一个狗对象的实例。
 
 ```javascript
 　　var dogA = new DOG('大毛');
@@ -57,11 +57,11 @@ Foo foo = new Foo();
 　　alert(dogA.name); // 大毛
 ```
 
-### new运算符的缺点
+### new 运算符的缺点
 
 但是有个问题出现了，用构造函数生成实例对象，有一个缺点，那就是无法共享属性和方法。
 
-比如，在DOG对象的构造函数中，设置一个实例对象的共有属性species。
+比如，在 DOG 对象的构造函数中，设置一个实例对象的共有属性 species。
 
 ```javascript
 　　function DOG(name){
@@ -81,7 +81,7 @@ Foo foo = new Foo();
 　　var dogB = new DOG('二毛');
 ```
 
-这两个对象的species属性是独立的，修改其中一个，不会影响到另一个。
+这两个对象的 species 属性是独立的，修改其中一个，不会影响到另一个。
 
 ```JavaScript
 　　dogA.species = '猫科';
@@ -91,15 +91,15 @@ Foo foo = new Foo();
 
 每一个实例对象，都有自己的属性和方法的副本。这不仅无法做到数据共享，也是极大的资源浪费。
 
-### prototype属性的引入
+### prototype 属性的引入
 
-考虑到这一点，Brendan Eich决定为构造函数设置一个prototype属性。
+考虑到这一点，Brendan Eich 决定为构造函数设置一个 prototype 属性。
 
-这个属性包含一个对象（以下简称"prototype对象"），所有实例对象需要共享的属性和方法，都放在这个对象里面；那些不需要共享的属性和方法，就放在构造函数里面。
+这个属性包含一个对象（以下简称"prototype 对象"），所有实例对象需要共享的属性和方法，都放在这个对象里面；那些不需要共享的属性和方法，就放在构造函数里面。
 
-实例对象一旦创建，将自动引用prototype对象的属性和方法。也就是说，实例对象的属性和方法，分成两种，一种是本地的，另一种是引用的。
+实例对象一旦创建，将自动引用 prototype 对象的属性和方法。也就是说，实例对象的属性和方法，分成两种，一种是本地的，另一种是引用的。
 
-还是以DOG构造函数为例，现在用prototype属性进行改写：
+还是以 DOG 构造函数为例，现在用 prototype 属性进行改写：
 
 ```JavaScript
 　　function DOG(name){
@@ -121,7 +121,7 @@ Foo foo = new Foo();
 　　alert(dogB.species); // 犬科
 ```
 
-现在，species属性放在prototype对象里，是两个实例对象共享的。只要修改了prototype对象，就会同时影响到两个实例对象。
+现在，species 属性放在 prototype 对象里，是两个实例对象共享的。只要修改了 prototype 对象，就会同时影响到两个实例对象。
 
 ```JavaScript
 　　DOG.prototype.species = '猫科';
@@ -138,7 +138,7 @@ Foo foo = new Foo();
 
 ## 原型链
 
-在JS中，每个对象都有自己的原型。当我们访问对象的属性和方法时，JS会先访问对象本身的属性和方法。如果对象本身不包含这些属性和方法，则访问对象对应的原型。
+在 JS 中，每个对象都有自己的原型。当我们访问对象的属性和方法时，JS 会先访问对象本身的属性和方法。如果对象本身不包含这些属性和方法，则访问对象对应的原型。
 
 所谓的原型链，即原型链条。它是由原型、原型的原型、原型的原型的原型...这一规则组合成的，经常被应用于继承。
 
@@ -177,7 +177,7 @@ xiaoHong.sayAge(); // 11
 
 ### 原型链的原理
 
-原型自身也是一个对象（默认情况下所有对象都是Object的实例)。
+原型自身也是一个对象（默认情况下所有对象都是 Object 的实例)。
 
 ```JavaScript
 console.log(xiaoming instanceof Object); // true
@@ -220,7 +220,7 @@ xiaoming.introduce(); // My name is XiaoMing,I'm 12 years old!
 
 ### 总结
 
-原型链是JS的一个特性，它实现的核心机制是：
+原型链是 JS 的一个特性，它实现的核心机制是：
 
 1. 访问对象的属性(方法)时，若对象本身不存在该属性(方法)，则会转向访问该对象的原型；
 2. 对象的原型也是一个对象。访问的属性(方法)依旧不存在于该原型，则会继续访问该原型的原型...

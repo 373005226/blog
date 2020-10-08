@@ -1,8 +1,8 @@
 ---
-title: promise如何解决多个异步回调问题
+title: promise 如何解决多个异步回调问题
 categories: 前端
 tags:
-    - JavaScript
+  - JavaScript
 ---
 
 首先题目如下：
@@ -47,9 +47,9 @@ tags:
             })
 ```
 
-这个方法其实就是设置延时，然后promise.all调用
+这个方法其实就是设置延时，然后 promise.all 调用
 
-## promise链式调用
+## promise 链式调用
 
 ```js
         function getUserName() {
