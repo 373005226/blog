@@ -172,7 +172,7 @@ module.exports = {
         {
           title: 'Vue面试题案例',
           collapsable: true,
-          children: ['Vue/vue组件通信的6种方法']
+          children: ['Vue/vue组件通信的方法']
         },
         {
           title: '计算机基础知识',
