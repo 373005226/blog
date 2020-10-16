@@ -167,6 +167,7 @@ module.exports = {
             'CSS/如何解决img底下空白',
             'CSS/无闪烁样式',
             'CSS/隐藏元素的区别',
+            'CSS/CSS常识'
           ],
         },
         {
@@ -179,10 +180,12 @@ module.exports = {
           collapsable: true,
           children: [
             'Browser/从浏览器输入URl到显示出页面的过程',
+            'Browser/从输入URL到显示',
             'Browser/计算机的五层协议',
             'Browser/渐进增强和优雅降级',
             'Browser/get和post的区别',
             'Browser/HTTP请求的方式',
+            'Browser/HTTP详解'
           ]
         },
       ],

@@ -1,5 +1,5 @@
 ---
-title: 从浏览器输入 URl 到显示出页面的过程
+title: 从浏览器输入 URl 到显示出页面的过程(详细版)
 categories: 前端
 tags:
   - 浏览器
