@@ -90,7 +90,7 @@ module.exports = {
             {
               title: '数组去重',
               collapsable: true,
-              children: ['JS/去重', 'JS/JS数组有对象的形式去重']
+              children: ['JS/去重', 'JS/JS数组有对象的形式去重','JS/数组的交并差补']
             },
             {
               title: 'Event Loop',

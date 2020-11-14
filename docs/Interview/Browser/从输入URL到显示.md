@@ -86,4 +86,4 @@ tags:
 
 在看 chrome 渲染的时候，发现页面一共有 3 个事件点，`first paint`，`DOMContentLoaded`，`onLoad`。`fisrt paint` 就是所谓的首屏时间
 
-[first paint 详述文章地址](https://www.cnblogs.com/hongrunhui/p/8929001.html)
+[first paint 详述](https://www.cnblogs.com/hongrunhui/p/8929001.html)

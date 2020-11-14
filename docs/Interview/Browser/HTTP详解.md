@@ -7,9 +7,8 @@ tags:
 
 > 本文引用于 [https://juejin.im/post/6874114366023663623](https://juejin.im/post/6874114366023663623)，[MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Overview)
 
-## HTTP 协议
 
-## HTTP 协议基本性质
+## HTTP 基本性质
 
 HTTP 的是一个基于请求与响应、无状态有会话、灵活、简单可扩展的、应用层的协议
 
@@ -38,4 +37,15 @@ HTTP 因为是无状态的，所以在两个请求中，是完全没有任何关
 为了减轻这些缺陷，HTTP/1.1 引入了流水线（被证明难以实现）和持久连接的概念：底层的 TCP 连接可以通过 Connection 头部来被部分控制。HTTP/2 则发展得更远，通过在一个连接复用消息的方式来让这个连接始终保持为暖连接。 
 
 为了更好的适合 HTTP，设计一种更好传输协议的进程一直在进行。Google 就研发了一种以 UDP 为基础，能提供更可靠更高效的传输协议 QUIC。
+
+## HTTP 结构
+
+浏览器首先要做的事就是根据 URL  把数据取回来，取回数据使用的是 HTTP  协议，它的主要结构如下图所示
+
+![](https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/uPic/XQ795p.jpg)
+
+
+HTTP  是纯粹的文本协议，它是规定了使用 TCP  协议来传输文本格式的一个应用层协议， TCP  协议是一条双向的通讯通道， HTTP  在其基础上规定了 Request-Response  的模式，这个模式决定了通讯必定是由浏览器端首先发起的
+
+大部分情况下，浏览器的实现者只需要用一个 TCP  库，甚至一个现成的 HTTP  库就可以搞定浏览器的网络通讯部分
 
