@@ -25,7 +25,7 @@ module.exports = {
       { text: '首页', link: '/', icon: 'reco-home' },
       {
         text: '学习笔记',
-        link: '/accumulation/JS/',
+        link: '/accumulation/',
         // items: [
         //   { text: '前端', link: '/accumulation/JS/' },
         //   { text: 'Python', link: '/accumulation/Python/' }
@@ -46,22 +46,18 @@ module.exports = {
       { text: 'Github', link: 'https://github.com/LuckyRyan-web/' },
     ],
     sidebar: {
-      '/accumulation/JS/': [
+      '/accumulation/': [
         {
           title: '前端',
           collapsable: false,
-          children: ['开发风格', '包管理工具'],
+          children: ['JS/开发风格', 'JS/包管理工具'],
         },
+        {
+          title: 'Git',
+          collapsable: false,
+          children: ['Git/git'],
+        }
       ],
-      // '/accumulation/Python/':[
-      //   {
-      //     title: 'Python',
-      //     collapsable: false,
-      //     children:[
-      //       ''
-      //     ]
-      //   }
-      // ],
       '/Interview/': [
         {
           title: 'Javascript',

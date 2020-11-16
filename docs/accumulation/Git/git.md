@@ -1,0 +1,34 @@
+---
+title: Git 的常规操作
+categories: Git
+tags:
+  - Git
+---
+
+## 撤销代码
+在开发中，如果不小心 commit 了代码，但是又还有代码要一起提交，可以使用命令
+
+```git
+git reset --soft HEAD^
+```
+
+HEAD^ 就是返回上一个 commit 的意思，等同于 HEAD～1，如果是两次的话就改成 HEAD～2
+
+不仅撤销了代码，而且写的代码仍然保留。
+
+git 的撤销操作有三个， `--mixed`,`--soft`,`--hard`
+
+### --soft
+
+这个是对代码有最小的影响，--soft 只是撤销 commit ，但是 git add 依然保留
+
+### --mixed
+mixed 不删除这里改动的代码，仅仅撤销 commit 和 add，但是不删除这次改动的代码
+
+代码`git reset --mixed HEAD^`和代码`git reset HEAD^`是一样的，mixed 可以省略
+
+### --hard
+撤销 git commit 和 git add ，也就是回复到上一次的 commit 状态，即删除了这次改动的代码
+
+## 撤销注释
+如果是 commit 的信息提交错误的话，那么就没必要 --soft 再提交，可以使用命令 `git commit --amend`
