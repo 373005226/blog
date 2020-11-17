@@ -55,7 +55,7 @@ module.exports = {
         {
           title: 'Git',
           collapsable: false,
-          children: ['Git/撤销代码'],
+          children: ['Git/撤销代码','Git/修改注释'],
         }
       ],
       '/Interview/': [
