@@ -5,6 +5,8 @@ module.exports = {
     type: 'blog',
     lang: 'zh-CN',
     title: '刘渊的网站',
+    record: '粤ICP备2020117319号-1',
+    recordLink:'http://beian.miit.gov.cn',
     lastUpdated: '文章最后更新时间',
     friendLink: [
       {
