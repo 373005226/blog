@@ -8,6 +8,10 @@ module.exports = {
     record: '粤ICP备2020117319号-1',
     recordLink:'http://beian.miit.gov.cn',
     lastUpdated: '文章最后更新时间',
+    algolia: {
+      apiKey: '<API_KEY>',
+      indexName: '<INDEX_NAME>'
+    },
     friendLink: [
       {
         title: '知音必答',
@@ -52,7 +56,7 @@ module.exports = {
         {
           title: '前端',
           collapsable: false,
-          children: ['JS/开发风格', 'JS/包管理工具'],
+          children: ['JS/开发风格', 'JS/包管理工具','JS/前端模块化'],
         },
         {
           title: 'Git',
