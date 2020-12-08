@@ -6,11 +6,11 @@ module.exports = {
     lang: 'zh-CN',
     title: '刘渊的网站',
     record: '粤ICP备2020117319号-1',
-    recordLink:'http://beian.miit.gov.cn',
+    recordLink: 'http://beian.miit.gov.cn',
     lastUpdated: '文章最后更新时间',
     algolia: {
       apiKey: '<API_KEY>',
-      indexName: '<INDEX_NAME>'
+      indexName: '<INDEX_NAME>',
     },
     friendLink: [
       {
@@ -42,12 +42,11 @@ module.exports = {
         link: '/Interview/',
       },
       { text: '算法积累', link: '/algorithm/' },
-      { text: '文章积累', link: '/article/' },
+      { text: '每日时报', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
-      { text: '关于我', link: '/about/' },
       { text: '标签', link: '/tag/' },
       { text: '分类', items: [{ text: '前端', link: '/categories/前端/' }] },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+      // { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
       { text: '我的博客', link: 'https://luckyryan-web.github.io/' },
       { text: 'Github', link: 'https://github.com/LuckyRyan-web/' },
     ],
@@ -56,13 +55,13 @@ module.exports = {
         {
           title: '前端',
           collapsable: false,
-          children: ['JS/开发风格', 'JS/包管理工具','JS/前端模块化'],
+          children: ['JS/开发风格', 'JS/包管理工具', 'JS/前端模块化', 'JS/AMD'],
         },
         {
           title: 'Git',
           collapsable: false,
-          children: ['Git/撤销代码','Git/修改注释'],
-        }
+          children: ['Git/撤销代码', 'Git/修改注释'],
+        },
       ],
       '/Interview/': [
         {
@@ -72,27 +71,32 @@ module.exports = {
             {
               title: '基本数据类型',
               collapsable: true,
-              children: ['JS/NaN是什么数据类型', 'JS/运算表达式的问题', 'JS/data的属性是什么']
+              children: ['JS/NaN是什么数据类型', 'JS/运算表达式的问题', 'JS/data的属性是什么'],
             },
             {
               title: '闭包',
               collapsable: true,
-              children: ['JS/闭包']
+              children: ['JS/闭包'],
             },
             {
               title: '变量声明',
               collapsable: true,
-              children: ['JS/变量拼接问题', 'JS/变量声明顺序的问题']
+              children: ['JS/变量拼接问题', 'JS/变量声明顺序的问题'],
             },
             {
               title: '数据类型检测',
               collapsable: true,
-              children: ['JS/JS判断数据类型的方法和区别', 'JS/instanceof', 'JS/typeof的原理', 'JS/等号的区别']
+              children: [
+                'JS/JS判断数据类型的方法和区别',
+                'JS/instanceof',
+                'JS/typeof的原理',
+                'JS/等号的区别',
+              ],
             },
             {
               title: '数组去重',
               collapsable: true,
-              children: ['JS/去重', 'JS/JS数组有对象的形式去重','JS/数组的交并差补']
+              children: ['JS/去重', 'JS/JS数组有对象的形式去重', 'JS/数组的交并差补'],
             },
             {
               title: 'Event Loop',
@@ -104,7 +108,7 @@ module.exports = {
                 'JS/promise解决多个异步回调问题',
                 'JS/限制promise的并发数量',
                 'JS/JS加载的方式',
-              ]
+              ],
             },
             {
               title: '原型与原型链',
@@ -116,22 +120,22 @@ module.exports = {
                 'JS/JS实例',
                 'JS/JS原型链',
                 'JS/JS原型详解',
-              ]
+              ],
             },
             {
               title: 'this',
               collapsable: true,
-              children: ['JS/JS中this的指向']
+              children: ['JS/JS中this的指向'],
             },
             {
               title: 'ES6语法',
               collapsable: true,
-              children: ['JS/ES6语法', 'JS/JS箭头函数']
+              children: ['JS/ES6语法', 'JS/JS箭头函数'],
             },
             {
               title: '面向对象',
               collapsable: true,
-              children: ['JS/new操作符都实现了什么']
+              children: ['JS/new操作符都实现了什么'],
             },
             {
               title: '手写源码系列',
@@ -141,17 +145,17 @@ module.exports = {
                 'JS/如何阻止冒泡事件和默认事件',
                 'JS/实现JS的深浅拷贝',
                 'JS/JS实现数组的find方法',
-              ]
+              ],
             },
             {
               title: 'JS存储',
               collapsable: true,
-              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式']
+              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式'],
             },
             {
               title: '其他',
               collapsable: true,
-              children: ['JS/JS如何避免全局变量污染', 'JS/Json字符串和JavaScript对象区别']
+              children: ['JS/JS如何避免全局变量污染', 'JS/Json字符串和JavaScript对象区别'],
             },
           ],
         },
@@ -169,13 +173,13 @@ module.exports = {
             'CSS/如何解决img底下空白',
             'CSS/无闪烁样式',
             'CSS/隐藏元素的区别',
-            'CSS/CSS常识'
+            'CSS/CSS常识',
           ],
         },
         {
           title: 'Vue面试题案例',
           collapsable: true,
-          children: ['Vue/vue组件通信的方法']
+          children: ['Vue/vue组件通信的方法'],
         },
         {
           title: '计算机基础知识',
@@ -187,12 +191,18 @@ module.exports = {
             'Browser/渐进增强和优雅降级',
             'Browser/get和post的区别',
             'Browser/HTTP请求的方式',
-            'Browser/HTTP详解'
-          ]
+            'Browser/HTTP详解',
+          ],
         },
       ],
       '/algorithm/': ['两数相加', '深度优先遍历和广度优先遍历'],
-      '/article/': [''],
+      '/article/': [
+        {
+          title: '2020年12月',
+          collapsable: false,
+          children: ['2020-12-8'],
+        },
+      ],
       '/about/': ['', 'todo'],
       '/tool/': [''],
     },
