@@ -208,9 +208,4 @@ module.exports = {
     },
   },
   plugins: ['@vuepress/last-updated'],
-  // algolia: {
-  //   apiKey: '<API_KEY>',
-  //   indexName: '<INDEX_NAME>'
-  // },
-  // lastUpdated: 'Last Updated'
 };
