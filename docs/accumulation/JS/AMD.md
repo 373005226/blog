@@ -202,3 +202,11 @@ define(['text!review.txt', 'image!cat.jpg'], function(review, cat) {
 ```
 
 其他的还有 json 、markdown 等等
+
+> 参考文章
+>
+> [简书文章:前端模块化（CommonJs,AMD 和 CMD），作者:linwalker](https://www.jianshu.com/p/d67bc79976e6)
+>
+> [Javascript 模块化编程（二）：AMD 规范](http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html)
+>
+> [阮一峰老师的文章:Javascript 模块化编程（三）：require.js 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
