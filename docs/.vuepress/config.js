@@ -41,6 +41,7 @@ module.exports = {
         text: '面试宝典',
         link: '/Interview/',
       },
+      { text: '源码学习', link: '/Code/' },
       { text: '算法积累', link: '/algorithm/' },
       { text: '每日时报', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
@@ -174,6 +175,7 @@ module.exports = {
             'CSS/无闪烁样式',
             'CSS/隐藏元素的区别',
             'CSS/CSS常识',
+            'CSS/CSS两列布局的N种实现'
           ],
         },
         {
@@ -194,6 +196,13 @@ module.exports = {
             'Browser/HTTP详解',
           ],
         },
+      ],
+      '/Code/': [
+        {
+          title: 'Node源码学习',
+          collapsable: false,
+          children: ['Node/commonjs.md'],
+        }
       ],
       '/algorithm/': ['两数相加', '深度优先遍历和广度优先遍历'],
       '/article/': [
