@@ -1,6 +1,5 @@
 ---
 title: 深入理解闭包
-date: 2020-8-22
 categories: 前端
 tags:
   - JavaScript

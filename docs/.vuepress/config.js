@@ -43,7 +43,7 @@ module.exports = {
       },
       { text: '源码学习', link: '/Code/' },
       { text: '算法积累', link: '/algorithm/' },
-      { text: '每日时报', link: '/article/' },
+      // { text: '每日时报', link: '/article/' },
       { text: '工具箱', link: '/tool/' },
       { text: '标签', link: '/tag/' },
       { text: '分类', items: [{ text: '前端', link: '/categories/前端/' }] },
@@ -92,6 +92,7 @@ module.exports = {
                 'JS/instanceof',
                 'JS/typeof的原理',
                 'JS/等号的区别',
+                'JS/0.1+0.2.md'
               ],
             },
             {
@@ -205,13 +206,13 @@ module.exports = {
         }
       ],
       '/algorithm/': ['两数相加', '深度优先遍历和广度优先遍历'],
-      '/article/': [
-        {
-          title: '2020年12月',
-          collapsable: false,
-          children: ['2020-12-8'],
-        },
-      ],
+      // '/article/': [
+      //   {
+      //     title: '2020年12月',
+      //     collapsable: false,
+      //     children: ['2020-12-8'],
+      //   },
+      // ],
       '/about/': ['', 'todo'],
       '/tool/': [''],
     },
