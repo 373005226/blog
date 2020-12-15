@@ -19,10 +19,6 @@ tags:
 
 代码如下:
 
-::: details
-<<< docs/.vuepress/code/store.js
-:::
-
 
 > 作者：yck0
 > 链接：https://juejin.cn/post/6844903598707441672
