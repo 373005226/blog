@@ -8,3 +8,4 @@
 | 深入理解 TypeScript 中文翻译      | [地址](https://jkchao.github.io/typescript-book-chinese/#why) |
 | TypeScript 入门教程      |   [地址](https://ts.xcatliu.com/) |
 | SCSS 中文文档      |   [地址](https://www.html.cn/doc/sass/) |
+| 《深入理解 Node.js：核心思想与源码分析》      |   [地址](https://yjhjstz.gitbooks.io/deep-into-node/content/) |

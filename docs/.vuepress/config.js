@@ -110,6 +110,7 @@ module.exports = {
                 'JS/promise解决多个异步回调问题',
                 'JS/限制promise的并发数量',
                 'JS/JS加载的方式',
+                'JS/发起请求的失败.md'
               ],
             },
             {
@@ -152,7 +153,7 @@ module.exports = {
             {
               title: 'JS存储',
               collapsable: true,
-              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式'],
+              children: ['JS/三种存储方式的区别', 'JS/域名', 'JS/JS中存储的方式','JS/Localstorage缓存淘汰机制.md'],
             },
             {
               title: '其他',
