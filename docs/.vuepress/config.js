@@ -149,6 +149,7 @@ module.exports = {
                 'JS/如何阻止冒泡事件和默认事件',
                 'JS/实现JS的深浅拷贝',
                 'JS/JS实现数组的find方法',
+                'JS/手写bind'
               ],
             },
             {
