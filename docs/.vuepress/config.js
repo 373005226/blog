@@ -105,6 +105,7 @@ module.exports = {
               collapsable: true,
               children: [
                 'JS/微任务和宏任务',
+                'JS/Node中的EventLoop',
                 'JS/Promise',
                 'JS/promise的链式调用',
                 'JS/promise解决多个异步回调问题',
@@ -177,7 +178,8 @@ module.exports = {
             'CSS/无闪烁样式',
             'CSS/隐藏元素的区别',
             'CSS/CSS常识',
-            'CSS/CSS两列布局的N种实现'
+            'CSS/CSS两列布局的N种实现',
+            'CSS/宽度自适应'
           ],
         },
         {
@@ -206,7 +208,18 @@ module.exports = {
           children: ['Node/commonjs.md'],
         }
       ],
-      '/algorithm/': ['两数相加', '深度优先遍历和广度优先遍历'],
+      '/algorithm/': [
+        // {
+        //   title: '数组相关',
+        //   collapsable: false,
+        //   children: ['Array/README.md'],
+        // },
+        {
+          title: '字符串相关',
+          collapsable: false,
+          children: ['String/两数相加.md'],
+        }
+      ],
       // '/article/': [
       //   {
       //     title: '2020年12月',
