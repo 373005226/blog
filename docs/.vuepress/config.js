@@ -75,105 +75,104 @@ module.exports = {
                             title: '基本数据类型',
                             collapsable: true,
                             children: [
-                                'JS/NaN是什么数据类型',
-                                'JS/运算表达式的问题',
-                                'JS/data的属性是什么'
+                                'JS/基本数据类型/NaN是什么数据类型',
+                                'JS/基本数据类型/运算表达式的问题',
+                                'JS/基本数据类型/data的属性是什么'
                             ]
-                        },
-                        {
-                            title: '闭包',
-                            collapsable: true,
-                            children: ['JS/闭包']
                         },
                         {
                             title: '变量声明',
                             collapsable: true,
-                            children: ['JS/变量拼接问题', 'JS/变量声明顺序的问题']
+                            children: [
+                                'JS/变量声明/变量拼接问题',
+                                'JS/变量声明/变量声明顺序的问题',
+                                'JS/变量声明/闭包',
+                                'JS/变量声明/闭包copy'
+                            ]
                         },
                         {
                             title: '数据类型检测',
                             collapsable: true,
                             children: [
-                                'JS/JS判断数据类型的方法和区别',
-                                'JS/instanceof',
-                                'JS/typeof的原理',
-                                'JS/等号的区别',
-                                'JS/0.1+0.2.md'
+                                'JS/数据类型检测/JS判断数据类型的方法和区别',
+                                'JS/数据类型检测/instanceof',
+                                'JS/数据类型检测/typeof的原理',
+                                'JS/数据类型检测/等号的区别',
+                                'JS/数据类型检测/0.1+0.2.md',
+                                'JS/数据类型检测/Json字符串和JavaScript对象区别',
+                                'JS/数据类型检测/JS如何避免全局变量污染'
                             ]
                         },
                         {
-                            title: '数组去重',
+                            title: '数组',
                             collapsable: true,
-                            children: ['JS/去重', 'JS/JS数组有对象的形式去重', 'JS/数组的交并差补']
+                            children: [
+                                'JS/数组/去重',
+                                'JS/数组/JS数组有对象的形式去重',
+                                'JS/数组/数组的交并差补'
+                            ]
                         },
                         {
                             title: 'Event Loop',
                             collapsable: true,
                             children: [
-                                'JS/微任务和宏任务',
-                                'JS/Node中的EventLoop',
-                                'JS/Promise',
-                                'JS/promise的链式调用',
-                                'JS/promise解决多个异步回调问题',
-                                'JS/限制promise的并发数量',
-                                'JS/JS加载的方式',
-                                'JS/发起请求的失败.md'
+                                'JS/JS事件流/微任务和宏任务',
+                                'JS/JS事件流/Node中的EventLoop',
+                                'JS/JS事件流/Promise',
+                                'JS/JS事件流/promise的链式调用',
+                                'JS/JS事件流/promise解决多个异步回调问题',
+                                'JS/JS事件流/限制promise的并发数量',
+                                'JS/JS事件流/JS加载的方式',
+                                'JS/JS事件流/发起请求的失败.md'
                             ]
                         },
                         {
                             title: '原型与原型链',
                             collapsable: true,
                             children: [
-                                'JS/JS封装',
-                                'JS/JS构造函数的继承',
-                                'JS/JS非构造函数的继承',
-                                'JS/JS实例',
-                                'JS/JS原型链',
-                                'JS/JS原型详解'
+                                'JS/原型与原型链/JS封装',
+                                'JS/原型与原型链/JS构造函数的继承',
+                                'JS/原型与原型链/JS非构造函数的继承',
+                                'JS/原型与原型链/JS实例',
+                                'JS/原型与原型链/JS原型链',
+                                'JS/原型与原型链/JS原型详解'
                             ]
                         },
                         {
                             title: 'this',
                             collapsable: true,
-                            children: ['JS/JS中this的指向']
+                            children: ['JS/this指向/JS中this的指向']
                         },
                         {
                             title: 'ES6语法',
                             collapsable: true,
-                            children: ['JS/ES6语法', 'JS/JS箭头函数']
+                            children: ['JS/ES6语法/ES6语法', 'JS/ES6语法/JS箭头函数']
                         },
                         {
                             title: '面向对象',
                             collapsable: true,
-                            children: ['JS/new操作符都实现了什么']
+                            children: ['JS/面向对象/new操作符都实现了什么']
                         },
                         {
                             title: '手写源码系列',
                             collapsable: true,
                             children: [
-                                'JS/节流防抖的实现',
-                                'JS/如何阻止冒泡事件和默认事件',
-                                'JS/实现JS的深浅拷贝',
-                                'JS/JS实现数组的find方法',
-                                'JS/手写bind'
+                                'JS/手写源码系列/节流防抖的实现',
+                                'JS/手写源码系列/如何阻止冒泡事件和默认事件',
+                                'JS/手写源码系列/实现JS的深浅拷贝',
+                                'JS/手写源码系列/JS实现数组的find方法',
+                                'JS/手写源码系列/改变this的函数',
+                                'JS/手写源码系列/手写bind'
                             ]
                         },
                         {
                             title: 'JS存储',
                             collapsable: true,
                             children: [
-                                'JS/三种存储方式的区别',
-                                'JS/域名',
-                                'JS/JS中存储的方式',
-                                'JS/Localstorage缓存淘汰机制.md'
-                            ]
-                        },
-                        {
-                            title: '其他',
-                            collapsable: true,
-                            children: [
-                                'JS/JS如何避免全局变量污染',
-                                'JS/Json字符串和JavaScript对象区别'
+                                'JS/JS存储/三种存储方式的区别',
+                                'JS/JS存储/域名',
+                                'JS/JS存储/JS中存储的方式',
+                                'JS/JS存储/Localstorage缓存淘汰机制.md'
                             ]
                         }
                     ]

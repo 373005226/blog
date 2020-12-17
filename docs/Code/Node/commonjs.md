@@ -242,9 +242,6 @@ module.paths:  [ '/home/ruanyf/tmp/node_modules',
 
 
 
-
-
-
 > 参考文章
 >
 > [阮一峰的网络日志:require() 源码解读](http://www.ruanyifeng.com/blog/2015/05/require.html)
