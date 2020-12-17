@@ -1,7 +1,7 @@
 <!-- <customer-component/> -->
 
 ::: details
-<<< docs/.vuepress/code/test.md
+<<< docs/.vuepress/code/code/sum.js
 :::
 
 ::: theorem 牛顿第一定律
