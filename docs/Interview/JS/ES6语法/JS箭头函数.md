@@ -3,6 +3,7 @@ title: JS 箭头函数的区别
 categories: 前端
 tags:
   - JavaScript
+  - ES6
 ---
 > 本文转载于：https://www.jianshu.com/p/02958d3b58da
 >

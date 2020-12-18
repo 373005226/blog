@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
     themeConfig: {
         subSidebar: 'auto',
+        search: true,
         displayAllHeaders: true, // 默认值：false
         type: 'blog',
         lang: 'zh-CN',
@@ -10,10 +11,10 @@ module.exports = {
         record: '粤ICP备2020117319号-1',
         recordLink: 'http://beian.miit.gov.cn',
         lastUpdated: '文章最后更新时间',
-        algolia: {
-            apiKey: '<API_KEY>',
-            indexName: '<INDEX_NAME>'
-        },
+        // algolia: {
+        //     apiKey: '<API_KEY>',
+        //     indexName: '<INDEX_NAME>'
+        // },
         friendLink: [
             {
                 title: '知音必答',
@@ -81,16 +82,6 @@ module.exports = {
                             ]
                         },
                         {
-                            title: '变量声明',
-                            collapsable: true,
-                            children: [
-                                'JS/变量声明/变量拼接问题',
-                                'JS/变量声明/变量声明顺序的问题',
-                                'JS/变量声明/闭包',
-                                'JS/变量声明/闭包copy'
-                            ]
-                        },
-                        {
                             title: '数据类型检测',
                             collapsable: true,
                             children: [
@@ -104,6 +95,18 @@ module.exports = {
                             ]
                         },
                         {
+                            title: '变量声明',
+                            collapsable: true,
+                            children: [
+                                'JS/变量声明/变量拼接问题',
+                                'JS/变量声明/变量声明顺序的问题',
+                                'JS/变量声明/闭包',
+                                'JS/变量声明/闭包copy',
+                                'JS/变量声明/JS中this的指向',
+                                'JS/变量声明/改变this的函数'
+                            ]
+                        },
+                        {
                             title: '数组',
                             collapsable: true,
                             children: [
@@ -111,6 +114,16 @@ module.exports = {
                                 'JS/数组/JS数组有对象的形式去重',
                                 'JS/数组/数组的交并差补'
                             ]
+                        },
+                        {
+                            title: '面向对象',
+                            collapsable: true,
+                            children: ['JS/面向对象/new操作符都实现了什么']
+                        },
+                        {
+                            title: 'ES6语法',
+                            collapsable: true,
+                            children: ['JS/ES6语法/ES6语法', 'JS/ES6语法/JS箭头函数']
                         },
                         {
                             title: 'Event Loop',
@@ -137,21 +150,6 @@ module.exports = {
                                 'JS/原型与原型链/JS原型链',
                                 'JS/原型与原型链/JS原型详解'
                             ]
-                        },
-                        {
-                            title: 'this',
-                            collapsable: true,
-                            children: ['JS/this指向/JS中this的指向']
-                        },
-                        {
-                            title: 'ES6语法',
-                            collapsable: true,
-                            children: ['JS/ES6语法/ES6语法', 'JS/ES6语法/JS箭头函数']
-                        },
-                        {
-                            title: '面向对象',
-                            collapsable: true,
-                            children: ['JS/面向对象/new操作符都实现了什么']
                         },
                         {
                             title: '手写源码系列',

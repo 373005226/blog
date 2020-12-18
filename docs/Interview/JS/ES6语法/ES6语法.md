@@ -3,6 +3,7 @@ title: ES6 新增语法
 categories: 前端
 tags:
   - JavaScript
+  - ES6
 ---
 
 ## ES6 新增特性
