@@ -103,7 +103,6 @@ module.exports = {
                                 'JS/变量声明/闭包',
                                 'JS/变量声明/闭包copy',
                                 'JS/变量声明/JS中this的指向',
-                                'JS/变量声明/改变this的函数'
                             ]
                         },
                         {
@@ -123,7 +122,13 @@ module.exports = {
                         {
                             title: 'ES6语法',
                             collapsable: true,
-                            children: ['JS/ES6语法/ES6语法', 'JS/ES6语法/JS箭头函数']
+                            children: [
+                                'JS/ES6语法/ES6语法',
+                                'JS/ES6语法/JS箭头函数',
+                                'JS/ES6语法/ES6解构赋值',
+                                'JS/ES6语法/Symbol',
+                                'JS/ES6语法/Map与Set',
+                            ]
                         },
                         {
                             title: 'Event Loop',
@@ -159,7 +164,6 @@ module.exports = {
                                 'JS/手写源码系列/如何阻止冒泡事件和默认事件',
                                 'JS/手写源码系列/实现JS的深浅拷贝',
                                 'JS/手写源码系列/JS实现数组的find方法',
-                                'JS/手写源码系列/改变this的函数',
                                 'JS/手写源码系列/手写bind'
                             ]
                         },

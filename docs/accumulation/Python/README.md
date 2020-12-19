@@ -1,8 +1,8 @@
 <!-- <customer-component/> -->
 
-::: details
+<!-- ::: details
 <<< docs/.vuepress/code/code/sum.js
-:::
+::: -->
 
 ::: theorem 牛顿第一定律
 假若施加于某物体的外力为零，则该物体的运动速度不变。
