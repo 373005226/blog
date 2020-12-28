@@ -102,7 +102,7 @@ module.exports = {
                                 'JS/变量声明/变量声明顺序的问题',
                                 'JS/变量声明/闭包',
                                 'JS/变量声明/闭包copy',
-                                'JS/变量声明/JS中this的指向',
+                                'JS/变量声明/JS中this的指向'
                             ]
                         },
                         {
@@ -127,7 +127,7 @@ module.exports = {
                                 'JS/ES6语法/JS箭头函数',
                                 'JS/ES6语法/ES6解构赋值',
                                 'JS/ES6语法/Symbol',
-                                'JS/ES6语法/Map与Set',
+                                'JS/ES6语法/Map与Set'
                             ]
                         },
                         {
@@ -234,6 +234,21 @@ module.exports = {
                     title: '字符串相关',
                     collapsable: false,
                     children: ['String/两数相加.md']
+                },
+                {
+                    title: '栈',
+                    collapsable: false,
+                    children: ['栈/有效的括号.md']
+                },
+                {
+                    title: '队列',
+                    collapsable: false,
+                    children: ['队列/最近的请求次数.md']
+                },
+                {
+                    title: '链表',
+                    collapsable: false,
+                    children: ['链表/JS中的链表.md', '链表/删除链表中的节点.md', '链表/反转链表.md']
                 }
             ],
             // '/article/': [
