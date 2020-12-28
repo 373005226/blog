@@ -14,6 +14,11 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "dependencies": {
     "lint-md-cli": "^0.1.2",
     "vuepress-theme-reco": "^1.5.5"

@@ -18,7 +18,7 @@ ES6 数据类型除了 `Number 、 String 、 Boolean 、 Objec t、 null` 和 `
 
 ```js
 a = Symbol(123)
-b=  Symbol(123)
+b = Symbol(123)
 a === b // false
 ```
 
@@ -29,29 +29,29 @@ a === b // false
 因为每个 Symbol 都是唯一的，所以 Symbol 作为对象的属性可以保证唯一性
 
 ```js
-let sy = Symbol("key1");
- 
-let syObject = {};
-syObject[sy] = "kk";
-console.log(syObject);    // {Symbol(key1): "kk"}
+let sy = Symbol('key1')
+
+let syObject = {}
+syObject[sy] = 'kk'
+console.log(syObject) // {Symbol(key1): "kk"}
 ```
 
 ### 3.2 注意点
 
-但是不会出现在 `for...in` 、 `for...of` 的循环中，也不会被 `Object.keys()` 、 `Object.getOwnPropertyNames()` 返回。如果要读取到一个对象的 `Symbol` 属性，可以通过 `Object.getOwnPropertySymbols() ` 和 `Reflect.ownKeys()` 取到。
+但是不会出现在 `for...in` 、 `for...of` 的循环中，也不会被 `Object.keys()` 、 `Object.getOwnPropertyNames()` 返回。如果要读取到一个对象的 `Symbol` 属性，可以通过 `Object.getOwnPropertySymbols()` 和 `Reflect.ownKeys()` 取到。
 
 ```js
-let syObject = {};
-syObject[Symbol("key1")] = "kk";
-console.log(syObject);
- 
-for (let i in syObject) {
-  console.log(i);
-}  
+let syObject = {}
+syObject[Symbol('key1')] = 'kk'
+console.log(syObject)
 
-Object.keys(syObject);                     // []
-Object.getOwnPropertySymbols(syObject);    // [Symbol(key1)]
-Reflect.ownKeys(syObject);                 // [Symbol(key1)]
+for (let i in syObject) {
+  console.log(i)
+}
+
+Object.keys(syObject) // []
+Object.getOwnPropertySymbols(syObject) // [Symbol(key1)]
+Reflect.ownKeys(syObject) // [Symbol(key1)]
 ```
 
 ### 3.3 Symbol.for()
@@ -59,12 +59,12 @@ Reflect.ownKeys(syObject);                 // [Symbol(key1)]
 `Symbol.for()` 类似单例模式，首先会在全局搜索被登记的 `Symbol` 中是否有该字符串参数作为名称的 `Symbol` 值，如果有即返回该 `Symbol` 值，若没有则新建并返回一个以该字符串参数为名称的 `Symbol` 值，并登记在全局环境中供搜索。
 
 ```js
-let yellow = Symbol("Yellow");
-let yellow1 = Symbol.for("Yellow");
-yellow === yellow1;      // false
- 
-let yellow2 = Symbol.for("Yellow");
-yellow1 === yellow2;     // true
+let yellow = Symbol('Yellow')
+let yellow1 = Symbol.for('Yellow')
+yellow === yellow1 // false
+
+let yellow2 = Symbol.for('Yellow')
+yellow1 === yellow2 // true
 ```
 
 ### 3.4 Symbol.keyFor()
@@ -72,6 +72,6 @@ yellow1 === yellow2;     // true
 `Symbol.keyFor()` 返回一个已登记的 `Symbol` 类型值的 key ，用来检测该字符串参数作为名称的 `Symbol` 值是否已被登记。
 
 ```js
-let yellow1 = Symbol.for("Yellow");
-Symbol.keyFor(yellow1);    // "Yellow"
+let yellow1 = Symbol.for('Yellow')
+Symbol.keyFor(yellow1) // "Yellow"
 ```
