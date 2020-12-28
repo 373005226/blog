@@ -248,7 +248,7 @@ module.exports = {
                 {
                     title: '链表',
                     collapsable: false,
-                    children: ['链表/JS中的链表.md', '链表/删除链表中的节点.md', '链表/反转链表.md']
+                    children: ['链表/删除链表中的节点.md', '链表/反转链表.md']
                 }
             ],
             // '/article/': [
