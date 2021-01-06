@@ -2,8 +2,8 @@
 title: typescript 中 泛型的使用
 categories: 前端
 tags:
-    - typescript
-    - Vue
+  - typescript
+  - Vue
 ---
 
 ## 泛型的使用

@@ -4,3 +4,4 @@ templates
 **/dist/**
 **/lib/**
 config/appConfigs.js
+*.md
