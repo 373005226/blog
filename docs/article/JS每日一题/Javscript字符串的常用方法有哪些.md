@@ -146,6 +146,15 @@ console.log(message.includes("bar")); // true
 console.log(message.includes("qux")); // false
 ```
 
+## 转换方法
+
+split 可以把字符串的传入的指定分隔符来拆分成为数组中的每一项
+
+```js
+let str = "12+23+34"
+let arr = str.split("+") // [12,23,34]
+```
+
 ## 正则表达式
 
 针对正则表达式，字符串设计了几个方法：
@@ -187,3 +196,7 @@ let text = "cat, bat, sat, fat";
 let result = text.replace("at", "ond");
 console.log(result); // "cond, bat, sat, fat"
 ```
+
+> 本片文章引用于：
+> [JS 每日一题:《面试官：Javscript 字符串的常用方法有哪些？》](https://mp.weixin.qq.com/s/sYI8eQhNkx1CoYjdVWbV7w)
+>
