@@ -46,7 +46,7 @@ module.exports = {
             },
             { text: '源码学习', link: '/Code/' },
             { text: '算法积累', link: '/algorithm/' },
-            // { text: '每日时报', link: '/article/' },
+            { text: '文章积累', link: '/article/' },
             { text: '工具箱', link: '/tool/' },
             { text: '标签', link: '/tag/' },
             { text: '分类', items: [{ text: '前端', link: '/categories/前端/' }] },
@@ -111,7 +111,8 @@ module.exports = {
                             children: [
                                 'JS/数组/去重',
                                 'JS/数组/JS数组有对象的形式去重',
-                                'JS/数组/数组的交并差补'
+                                'JS/数组/数组的交并差补',
+                                'JS/数组/不产生新数组，删除数组里的重复元素'
                             ]
                         },
                         {
@@ -178,6 +179,11 @@ module.exports = {
                             ]
                         }
                     ]
+                },
+                {
+                    title: 'Typesscript',
+                    collapsable: true,
+                    children: ['TS/ts简便操作', 'TS/ts中的泛型']
                 },
                 {
                     title: 'CSS',
@@ -251,13 +257,18 @@ module.exports = {
                     children: ['链表/删除链表中的节点.md', '链表/反转链表.md']
                 }
             ],
-            // '/article/': [
-            //   {
-            //     title: '2020年12月',
-            //     collapsable: false,
-            //     children: ['2020-12-8'],
-            //   },
-            // ],
+            '/article/': [
+                {
+                    title: 'JS基础题',
+                    collapsable: false,
+                    children: [
+                        'JS每日一题/JavaScript中的类型转换机制.md',
+                        'JS每日一题/JavaScript中的数据类型区别.md',
+                        'JS每日一题/Javscript数组的常用方法有哪些.md',
+                        'JS每日一题/Javscript字符串的常用方法有哪些.md'
+                    ]
+                }
+            ],
             '/about/': ['', 'todo'],
             '/tool/': ['']
         }
