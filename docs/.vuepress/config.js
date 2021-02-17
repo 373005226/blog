@@ -265,8 +265,15 @@ module.exports = {
                         'JS每日一题/JavaScript中的类型转换机制.md',
                         'JS每日一题/JavaScript中的数据类型区别.md',
                         'JS每日一题/Javscript数组的常用方法有哪些.md',
-                        'JS每日一题/Javscript字符串的常用方法有哪些.md'
+                        'JS每日一题/Javscript字符串的常用方法有哪些.md',
+                        'JS每日一题/JavaScript深拷贝与浅拷贝.md',
+                        'JS每日一题/JavaScript== 和 ===区别.md'
                     ]
+                },
+                {
+                    title: 'JS拓展',
+                    collapsable: false,
+                    children: ['全栈开发者/JavaScript数组反转.md']
                 }
             ],
             '/about/': ['', 'todo'],
