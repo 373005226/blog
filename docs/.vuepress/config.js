@@ -64,7 +64,7 @@ module.exports = {
                 {
                     title: 'Git',
                     collapsable: false,
-                    children: ['Git/撤销代码', 'Git/修改注释','Git/缓存代码']
+                    children: ['Git/撤销代码', 'Git/修改注释', 'Git/缓存代码']
                 }
             ],
             '/Interview/': [
@@ -274,6 +274,11 @@ module.exports = {
                     title: 'JS拓展',
                     collapsable: false,
                     children: ['全栈开发者/JavaScript数组反转.md']
+                },
+                {
+                    title: 'JS面试题汇总',
+                    collapsable: false,
+                    children: ['掘金/字节跳动基础题.md']
                 }
             ],
             '/about/': ['', 'todo'],
