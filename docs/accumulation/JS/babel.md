@@ -1,5 +1,6 @@
 ---
-title: babel 
+title: babel
+categories: 前端
 ---
 
 > 参考文章

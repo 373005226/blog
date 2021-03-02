@@ -1,5 +1,6 @@
 ---
 title: AMD 规范
+categories: 前端
 ---
 
 ## 为什么会出现 require.js
