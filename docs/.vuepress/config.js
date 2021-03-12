@@ -292,5 +292,5 @@ module.exports = {
             }
         }
     },
-    plugins: ['@vuepress/last-updated']
+    plugins: ['@vuepress/last-updated','demo-container']
 }

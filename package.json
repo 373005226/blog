@@ -6,7 +6,8 @@
     "devDependencies": {
         "husky": "^4.3.0",
         "lint-md": "^0.2.0",
-        "vuepress": "^1.5.3"
+        "vuepress": "^1.5.3",
+        "vuepress-plugin-demo-container": "^0.2.0"
     },
     "scripts": {
         "lint": "lint-md ./docs",
