@@ -103,21 +103,39 @@ console.log(fxArrs) // ["One", "love", "Three"]
 const obj2=JSON.parse(JSON.stringify(obj1));
 ```
 
-这个方法最为简便，但是存在弊端，会忽略 `undefined`、`symbol` 和`函数`,如下
+这个方法最为简便，但是存在弊端，会忽略 `undefined`、`Symbol` 和 `Function`、`RegExp（正则表达式，转换后变成了空对象）`、`Date（转换后变成了字符串，而非 Date 类的对象）`,如下
+
+Symbol 也无法被转换，但由于 Symbol 本身定义（全局唯一性）就决定了，它不应该被转换，否则即使转换回来，也不会是原来那个 Symbol
+
+Function 也比较特殊，不过要兼容的话，可以先调用 `.toString()` 转换为字符串储存，需要的时候再 `eval` 转回来
+
+以及，`JSON.stringify()` 无法转换循环引用的对象
 
 ```js
+const a = { key: 'value' };
+a['a'] = a;
+JSON.stringify(a);
 
+// Uncaught TypeError: Converting circular structure to JSON
+//     --> starting at object with constructor 'Object'
+//     --- property 'a' closes the circle
+//     at JSON.stringify (<anonymous>)
+```
+
+
+```js
 const obj = {
     name: 'A',
     name1: undefined,
     name3: function() {},
-    name4:  Symbol('A')
+    name4:  Symbol('A'),
+    name5: RegExp('ab+c', 'i'),
+    name6: Date('1995-12-17T03:24:00')
 }
 const obj2 = JSON.parse(JSON.stringify(obj));
-console.log(obj2); // {name: "A"}
 ```
 
-会忽略掉上面的三种类型
+会忽略掉上面的`undefined`、`Function`、`Symbol` 三种类型，`RegExp（正则表达式，转换后变成了空对象）`、`Date（转换后变成了字符串，而非 Date 类的对象）`
 
 ### 循环递归
 
