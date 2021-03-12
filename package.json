@@ -12,8 +12,7 @@
         "lint": "lint-md ./docs",
         "lint:fix": "lint-md ./docs --fix",
         "dev": "vuepress dev docs",
-        "build": "vuepress build docs",
-        "build:clear": "rm -rf docs/.vuepress/dist && yarn build"
+        "build": "vuepress build docs"
     },
     "husky": {
         "hooks": {
