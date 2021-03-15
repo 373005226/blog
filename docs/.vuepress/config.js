@@ -279,7 +279,7 @@ module.exports = {
                 {
                     title: 'JS面试题汇总',
                     collapsable: false,
-                    children: ['掘金/字节跳动基础题.md']
+                    children: ['掘金/字节跳动基础题.md','其他/给定一组url实现并发请求.md']
                 }
             ],
             '/about/': ['', 'todo'],
