@@ -91,7 +91,8 @@ module.exports = {
                                 'JS/数据类型检测/等号的区别',
                                 'JS/数据类型检测/0.1+0.2.md',
                                 'JS/数据类型检测/Json字符串和JavaScript对象区别',
-                                'JS/数据类型检测/JS如何避免全局变量污染'
+                                'JS/数据类型检测/JS如何避免全局变量污染',
+                                'JS/数据类型检测/stringfly和parse的区别'
                             ]
                         },
                         {
