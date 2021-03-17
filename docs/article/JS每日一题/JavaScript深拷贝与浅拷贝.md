@@ -85,11 +85,11 @@ console.log(fxArrs) // ["One", "love", "Three"]
 
 通俗使用的方法有
 
-* lodash 库的_.cloneDeep()
+* lodash 库的`_.cloneDeep()`
 
-* jQuery.extend()
+* `jQuery.extend()`
 
-* JSON.stringify()
+* `JSON.stringify()`
 
 * 不断的递归循环
 
@@ -133,9 +133,13 @@ const obj = {
     name6: Date('1995-12-17T03:24:00')
 }
 const obj2 = JSON.parse(JSON.stringify(obj));
+
+// name: "A"
+// name5: {}
+// name6: "Mon Mar 15 2021 11:31:16 GMT+0800 (中国标准时间)"
 ```
 
-会忽略掉上面的`undefined`、`Function`、`Symbol` 三种类型，`RegExp（正则表达式，转换后变成了空对象）`、`Date（转换后变成了字符串，而非 Date 类的对象）`
+会忽略掉上面的`undefined`、`Function`、`Symbol` 三种类型，`RegExp`（正则表达式，转换后变成了空对象）、`Date`（转换后变成了字符串，而非 Date 类的对象）
 
 ### 循环递归
 
