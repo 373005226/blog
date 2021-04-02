@@ -1,3 +1,0 @@
-[submodule "docs/.vuepress/code"]
-	path = docs/.vuepress/code
-	url = git@github.com:LuckyRyan-web/leetcode.git
