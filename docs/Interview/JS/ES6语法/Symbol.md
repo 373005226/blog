@@ -40,8 +40,13 @@ console.log(syObject) // {Symbol(key1): "kk"}
 
 但是不会出现在 `for...in` 、 `for...of` 的循环中，也不会被 `Object.keys()` 、 `Object.getOwnPropertyNames()` 返回。如果要读取到一个对象的 `Symbol` 属性，可以通过 `Object.getOwnPropertySymbols()` 和 `Reflect.ownKeys()` 取到。
 
+`Object.getOwnPropertySymbols()`是获取对象的 Symbol 字段
+
+`Reflect.ownKeys()` 是获取对象的所有字段包括 Symbol
+
 ```js
-let syObject = {}
+let syObject = {
+}
 syObject[Symbol('key1')] = 'kk'
 console.log(syObject)
 
@@ -53,6 +58,7 @@ Object.keys(syObject) // []
 Object.getOwnPropertySymbols(syObject) // [Symbol(key1)]
 Reflect.ownKeys(syObject) // [Symbol(key1)]
 ```
+
 
 ### 3.3 Symbol.for()
 
