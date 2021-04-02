@@ -29,7 +29,8 @@ module.exports = {
                 link: 'https://lmjben.github.io/'
             }
         ],
-        authorAvatar: 'https://avatars.githubusercontent.com/u/28999580?s=460&u=064f01b792abf774ee8236da3a227dd334b8ddd4&v=4',
+        authorAvatar:
+            'https://avatars.githubusercontent.com/u/28999580?s=460&u=064f01b792abf774ee8236da3a227dd334b8ddd4&v=4',
         nav: [
             { text: '首页', link: '/', icon: 'reco-home' },
             {
@@ -279,7 +280,7 @@ module.exports = {
                 {
                     title: 'JS面试题汇总',
                     collapsable: false,
-                    children: ['掘金/字节跳动基础题.md','其他/给定一组url实现并发请求.md']
+                    children: ['掘金/字节跳动基础题.md', '其他/给定一组url实现并发请求.md']
                 }
             ],
             '/about/': ['', 'todo'],
@@ -293,5 +294,5 @@ module.exports = {
             }
         }
     },
-    plugins: ['@vuepress/last-updated','demo-container']
+    plugins: ['@vuepress/last-updated', 'demo-container']
 }
