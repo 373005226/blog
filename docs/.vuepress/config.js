@@ -71,11 +71,11 @@ module.exports = {
             '/Interview/': [
                 {
                     title: 'Javascript',
-                    collapsable: true,
+                    collapsable: false,
                     children: [
                         {
                             title: '基本数据类型',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/基本数据类型/NaN是什么数据类型',
                                 'JS/基本数据类型/运算表达式的问题',
