@@ -21,7 +21,7 @@ tags:
 
 5. 箭头函数的 arguments 指向它的父级函数所在作用域的 arguments
 
-   
+
 
 ## 写法不一样
 
