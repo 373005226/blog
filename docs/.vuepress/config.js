@@ -84,7 +84,7 @@ module.exports = {
                         },
                         {
                             title: '数据类型检测',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/数据类型检测/JS判断数据类型的方法和区别',
                                 'JS/数据类型检测/instanceof',
@@ -98,7 +98,7 @@ module.exports = {
                         },
                         {
                             title: '变量声明',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/变量声明/变量拼接问题',
                                 'JS/变量声明/变量声明顺序的问题',
@@ -109,7 +109,7 @@ module.exports = {
                         },
                         {
                             title: '数组',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/数组/去重',
                                 'JS/数组/JS数组有对象的形式去重',
@@ -119,12 +119,12 @@ module.exports = {
                         },
                         {
                             title: '面向对象',
-                            collapsable: true,
+                            collapsable: false,
                             children: ['JS/面向对象/new操作符都实现了什么']
                         },
                         {
                             title: 'ES6语法',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/ES6语法/ES6语法',
                                 'JS/ES6语法/JS箭头函数',
@@ -135,7 +135,7 @@ module.exports = {
                         },
                         {
                             title: 'Event Loop',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/JS事件流/微任务和宏任务',
                                 'JS/JS事件流/Node中的EventLoop',
@@ -149,7 +149,7 @@ module.exports = {
                         },
                         {
                             title: '原型与原型链',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/原型与原型链/JS封装',
                                 'JS/原型与原型链/JS构造函数的继承',
@@ -161,7 +161,7 @@ module.exports = {
                         },
                         {
                             title: '手写源码系列',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/手写源码系列/节流防抖的实现',
                                 'JS/手写源码系列/如何阻止冒泡事件和默认事件',
@@ -172,7 +172,7 @@ module.exports = {
                         },
                         {
                             title: 'JS存储',
-                            collapsable: true,
+                            collapsable: false,
                             children: [
                                 'JS/JS存储/三种存储方式的区别',
                                 'JS/JS存储/域名',
@@ -184,44 +184,74 @@ module.exports = {
                 },
                 {
                     title: 'Typesscript',
-                    collapsable: true,
+                    collapsable: false,
                     children: ['TS/ts简便操作', 'TS/ts中的泛型']
                 },
                 {
                     title: 'CSS',
-                    collapsable: true,
+                    collapsable: false,
                     children: [
-                        'CSS/BFC',
-                        'CSS/盒子模型',
-                        'CSS/直角梯形',
-                        'CSS/属性的继承',
-                        'CSS/样式覆盖问题',
-                        'CSS/隐藏元素的方式和区别',
-                        'CSS/垂直居中问题',
-                        'CSS/如何解决img底下空白',
-                        'CSS/无闪烁样式',
-                        'CSS/隐藏元素的区别',
-                        'CSS/CSS常识',
-                        'CSS/CSS两列布局的N种实现',
-                        'CSS/宽度自适应'
+                        {
+                            title: '基础',
+                            collapsable: false,
+                            children: [
+                                'CSS/CSS常识',
+                                'CSS/属性的继承',
+                                'CSS/样式覆盖问题',
+                                'CSS/隐藏元素的方式和区别',
+                                'CSS/无闪烁样式',
+                                'CSS/直角梯形',
+                                'CSS/如何解决img底下空白',
+                                'CSS/隐藏元素的区别'
+                            ]
+                        },
+                        {
+                            title: '布局',
+                            collapsable: false,
+                            children: [
+                                'CSS/垂直居中问题',
+                                'CSS/CSS两列布局的N种实现',
+                                'CSS/宽度自适应'
+                            ]
+                        },
+                        {
+                            title: '盒子模型',
+                            collapsable: false,
+                            children: ['CSS/BFC', 'CSS/盒子模型']
+                        }
                     ]
                 },
                 {
                     title: 'Vue面试题案例',
-                    collapsable: true,
-                    children: ['Vue/vue组件通信的方法']
+                    collapsable: false,
+                    children: [
+                        {
+                            title: '组件通信',
+                            collapsable: false,
+                            children: ['Vue/vue组件通信的方法']
+                        }
+                    ]
                 },
                 {
                     title: '计算机基础知识',
-                    collapsable: true,
+                    collapsable: false,
                     children: [
-                        'Browser/从浏览器输入URl到显示出页面的过程',
-                        'Browser/从输入URL到显示',
-                        'Browser/计算机的五层协议',
-                        'Browser/渐进增强和优雅降级',
-                        'Browser/get和post的区别',
-                        'Browser/HTTP请求的方式',
-                        'Browser/HTTP详解'
+                        {
+                            title: '基础',
+                            collapsable: false,
+                            children: [
+                                'Browser/从浏览器输入URl到显示出页面的过程',
+                                'Browser/从输入URL到显示',
+                                'Browser/计算机的五层协议',
+                                'Browser/渐进增强和优雅降级',
+                                'Browser/get和post的区别'
+                            ]
+                        },
+                        {
+                            title: 'HTTP',
+                            collapsable: false,
+                            children: ['Browser/HTTP请求的方式', 'Browser/HTTP详解']
+                        }
                     ]
                 }
             ],
