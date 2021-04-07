@@ -145,75 +145,79 @@ https://github.com/douglascrockford/JSON-js/blob/master/json2.js
 全部思路的代码为：
 
 ```js
-function deepClone (obj){
-    let  cloonObj = {};
-    let ary = [];
-    if(typeof obj !== "object"){
+function deepClone(obj) {
+    let copy
 
-        return obj;
+    if (typeof obj !== 'object') {
+        return obj
     }
-    if(obj instanceof Array){
-        for(let val of obj ){
-            if(typeof val === "object"){
-                ary.push(deepClone(val));
-            }else {
-                ary.push(val);
-            }
-        }
-        return ary;
-    } else {
-        for(let key in obj){
-            if( obj[key] instanceof Object){
-                cloonObj[key] = deepClone(obj[key]);
+
+
+    if (obj instanceof RegExp) {
+        return new RegExp(obj)
+    }
+
+    if (obj instanceof Array) {
+        copy = []
+        for (let val of obj) {
+            if (typeof val === 'object') {
+                copy.push(deepClone(val))
             } else {
-                cloonObj[key] = obj[key];
+                copy.push(val)
             }
         }
-        return cloonObj;
+        return copy
+    }
+
+    if (obj instanceof Object) {
+        copy = {}
+        for (let key in obj) {
+            if (obj[key] instanceof Object) {
+                copy[key] = deepClone(obj[key])
+            } else {
+                copy[key] = obj[key]
+            }
+        }
+        return copy
+    }
+
+    if (obj instanceof Date) {
+        copy = new Date()
+        copy.setTime(obj.getTime())
+        return copy
+    }
+
+    if (obj instanceof Function) {
+        copy = function () {
+            return obj.apply(this, arguments)
+        }
+        return copy
     }
 }
 
 ```
-
-精简代码为：
-
-```js
-function  deepClone (obj){
-    let t =  new obj.constructor
-    if(obj instanceof Date) return new Date(obj);
-    if(obj instanceof RegExp) return new RegExp(obj);
-    if(typeof obj !== "object") return obj;
-    for(let key in obj){
-        t[key] = deepClone(obj[key]);
-    }
-    return t;
-}
-
-```
-
-
 
 ### 深度复制的完全实现
 
 ```js
-        //方法的实现
-        Object.prototype.clone = function () {
-            var o = {};
-            for (var i in this) {
-                o[i] = this[i];
-            }
-            return o;
-        };
-        Array.prototype.clone = function () {
-            var arr = [];
-            for (var i = 0; i < this.length; i++)
-                if (typeof this[i] !== 'object') {
-                    arr.push(this[i]);
-                } else {
-                    arr.push(this[i].clone());
-                }
-            return arr;
-        };
+//方法的实现
+Object.prototype.clone = function () {
+    var o = {};
+    for (var i in this) {
+        o[i] = this[i];
+    }
+    return o;
+};
+Array.prototype.clone = function () {
+    var arr = [];
+    for (var i = 0; i < this.length; i++)
+        if (typeof this[i] !== 'object') {
+            arr.push(this[i]);
+        } else {
+            arr.push(this[i].clone());
+        }
+    return arr;
+};
 ```
 
 测试代码：
