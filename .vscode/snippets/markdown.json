@@ -1,0 +1,16 @@
+{
+    "md-template": {
+        "prefix": "md",
+        "body": [
+            "---",
+            "  title: $TM_FILENAME",
+            "  categories: $1",
+            "---",
+            "",
+            "> 本片文章引用于：",
+            "> [$1]($1)",
+            "> "
+        ],
+        "description": "自动生成 md 模板文件"
+    }
+}
