@@ -29,8 +29,7 @@ module.exports = {
                 link: 'https://lmjben.github.io/'
             }
         ],
-        authorAvatar:
-            'https://avatars.githubusercontent.com/u/28999580?s=460&u=064f01b792abf774ee8236da3a227dd334b8ddd4&v=4',
+        authorAvatar: 'https://txy-tc-ly-1256104767.cos.ap-guangzhou.myqcloud.com/uPic/f6pUr0.jpg',
         nav: [
             { text: '首页', link: '/', icon: 'reco-home' },
             {
