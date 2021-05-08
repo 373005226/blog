@@ -8837,9 +8837,9 @@ vuepress-plugin-smooth-scroll@^0.0.9:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-vuepress-theme-reco@^1.5.5:
+vuepress-theme-reco@^1.6.6:
   version "1.6.6"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/vuepress-theme-reco/-/vuepress-theme-reco-1.6.6.tgz#f286f0000b1702b9511a439469c15b0d2b1e992d"
+  resolved "https://npm.yzops.net/vuepress-theme-reco/-/vuepress-theme-reco-1.6.6.tgz#f286f0000b1702b9511a439469c15b0d2b1e992d"
   integrity sha512-41jlW8bRo+aNJjYLTpFhe/naj2kXv39ySJa6N5sJE2UANubSiRCzV+VWN57I4VCRcSWRUqdy1m/Gn5PMtryWjA==
   dependencies:
     "@vue/composition-api" "^1.0.0-beta.20"
@@ -8856,10 +8856,10 @@ vuepress-theme-reco@^1.5.5:
     vue-demi "^0.5.3"
     vuepress-plugin-smooth-scroll "^0.0.9"
 
-vuepress@^1.5.3:
+vuepress@^1.8.2:
   version "1.8.2"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/vuepress/-/vuepress-1.8.2.tgz#97e8bf979630611fc7b621fc4cc35b798ee5e847"
-  integrity sha512-BU1lUDwsA3ghf7a9ga4dsf0iTc++Z/l7BR1kUagHWVBHw7HNRgRDfAZBDDQXhllMILVToIxaTifpne9mSi94OA==
+  resolved "https://npm.yzops.net/vuepress/-/vuepress-1.8.2.tgz#97e8bf979630611fc7b621fc4cc35b798ee5e847"
+  integrity sha1-l+i/l5YwYR/HtiH8TMNbeY7l6Ec=
   dependencies:
     "@vuepress/core" "1.8.2"
     "@vuepress/theme-default" "1.8.2"

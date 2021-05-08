@@ -49,8 +49,9 @@ module.exports = {
             { text: '文章积累', link: '/article/' },
             { text: '工具箱', link: '/tool/' },
             { text: '标签', link: '/tag/' },
-            { text: '分类', items: [{ text: '前端', link: '/categories/前端/' }] },
-            // { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+            // { text: '分类', items: [{ text: '前端', link: '/categories/前端/' }] },
+            { text: '分类', link: '/categories/前端/' },
+            { text: '时间线', link: '/timeline/', icon: 'reco-date' },
             { text: '我的博客', link: 'https://luckyryan-web.github.io/' },
             { text: 'Github', link: 'https://github.com/LuckyRyan-web/' }
         ],
