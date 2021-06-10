@@ -1,5 +1,6 @@
 # 这个是我的个人网站
 
+[跳转](README_zhCN.md)
 网站使用 vuepress 搭建
 
 插件说明
