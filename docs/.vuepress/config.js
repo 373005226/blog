@@ -185,7 +185,7 @@ module.exports = {
                 {
                     title: 'Typesscript',
                     collapsable: false,
-                    children: ['TS/ts简便操作', 'TS/ts中的泛型']
+                    children: ['typescript/ts简便操作', 'typescript/ts中的泛型', 'typescript/ts各种符号.md']
                 },
                 {
                     title: 'CSS',
